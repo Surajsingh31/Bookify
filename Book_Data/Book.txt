@@ -272,7 +272,266 @@
             "authors": ["Chandrachur Ghose "],
             "publication": "Penguin Viking"
         },
+
+	 {
+            "id": 21,
+            "name": "C Programming",
+            "price": 350,
+            "genre": "Education",
+            "type": "new",
+            "description": "Let Us C : Authentic guide to C programming language (18th Edition)"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/994/9789391392994.jpg",
+            "quantity": 30,
+            "authors": ["Yashavant Kanetkar"],
+            "publication": "BPB Publications"
+        },
 	  
-	 
+	 {
+            "id": 22,
+            "name": "Introduction to Algorithms, Fourth Edition",
+            "price": 350,
+            "genre": "Education",
+            "type": "new",
+            "description": "A comprehensive update of the leading algorithms text, with new material on matchings in bipartite graphs"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/305/9780262046305.jpg",
+            "quantity": 30,
+            "authors": ["Clifford Stein "],
+            "publication": "BPB Publications"
+        },
+
+	 {
+            "id": 23,
+            "name": "Data Structures and Algorithms Made Easy in Java",
+            "price": 1299,
+            "genre": "Education",
+            "type": "old",
+            "description": "A handy guide of sorts for any computer science professional, Data Structures And Algorithms Made Easy in Java:"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/554/9788192107554.jpg",
+            "quantity": 26,
+            "authors": ["Narasimha Karumanchi "],
+            "publication": "CareerMonk Publications"
+        },
+	 	 
+	  {
+            "id": 24,
+            "name": "Mathematics for Machine Learning",
+            "price": 1299,
+            "genre": "Education",
+            "type": "old",
+            "description": "The fundamental mathematical tools needed to understand machine learning include linear algebra, analytic geometry"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/145/9781108455145.jpg",
+            "quantity": 26,
+            "authors": ["Marc Peter Deisenroth"],
+            "publication": "Cambridge University Press"
+        },
+	
+	{
+            "id": 25,
+            "name": "Storytelling with Data",
+            "price": 1500,
+            "genre": "Education",
+            "type": "new",
+            "description": "Storytelling with Data teaches you the fundamentals of data visualization and how to communicate effectively with data"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/253/9781119002253.jpg",
+            "quantity": 26,
+            "authors": ["Cole Nussbaumer Knaflic"],
+            "publication": " Wiley"
+        },
+	
+	 {
+            "id": 26,
+            "name": "Word Power Made Easy",
+            "price": 350,
+            "genre": "Law",
+            "type": "new",
+            "description": "Word Power Made Easy intends to help improve the readers’ all-round language skills."
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/000/9788183071000.jpg",
+            "quantity": 10,
+            "authors": ["Norman Lewis"],
+            "publication": "Goyal Publishers & Distributors Pvt. Ltd"
+        },
+
+	 {
+            "id": 27,
+            "name": "Constitution and its Working",
+            "price": 350,
+            "genre": "Law",
+            "type": "new",
+            "description": "Constitution and its Working"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/098/9789354712098.jpg",
+            "quantity": 15,
+            "authors": ["N Vijayaraghavan"],
+            "publication": "OakBridge Publishing"
+        },
+
+	 {
+            "id": 28,
+            "name": "The Constitution of India by B R Ambedkar (Deluxe Edition) - Original Book",
+            "price": 500,
+            "genre": "Law",
+            "type": "old",
+            "description": "Constitution and its Working"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/338/9789390906338.jpg",
+            "quantity": 17,
+            "authors": [" Dr. B. R. Ambedkar"],
+            "publication": "Prabhat Prakashan Pvt. Ltd."
+        },
+
+	 {
+            "id": 29,
+            "name": " Case That Shook India",
+            "price": 495,
+            "genre": "Law",
+            "type": "old",
+            "description": "On 12 June 1975, for the first time in independent India's history, the election of a prime minister was set aside by a high court judgment."
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/646/9780143442646.jpg",
+            "quantity": 25,
+            "authors": [" Prashant Bhushan"],
+            "publication": "Prabhat Prakashan Pvt. Ltd."
+        },
+
+	 {
+            "id": 30,
+            "name": "Handbook of Liver Disease ",
+            "price": 1500,
+            "genre": "Medicine",
+            "type": "new",
+            "description": "Well-organized and vibrantly illustrated throughout, Handbook of Liver Disease "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/748/9780323478748.jpg",
+            "quantity": 30,
+            "authors": [" Lawrence S Friedman "],
+            "publication": "NIIMS"
+        },
+	 	
+
+	 {
+            "id": 31,
+            "name": "Bd Chaurasia's Handbook of General Anatomy ",
+            "price": 1500,
+            "genre": "Medicine",
+            "type": "new",
+            "description": "This edition meets the requirements of students in medical and dental sciences,"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/419/9788194125419.jpg",
+            "quantity": 5,
+            "authors": [" Krishna Garg "],
+            "publication": "NIIMS"
+        },
+
+	 {
+            "id": 32,
+            "name": "DC Dutta's Textbook of Obstetrics ",
+            "price": 1500,
+            "genre": "Medicine",
+            "type": "old",
+            "description": "new edition presenting latest developments in the field of obstetrics"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/428/9789352702428.jpg",
+            "quantity": 7,
+            "authors": [" Hiralal Konar "],
+            "publication": " Jp Medical Ltd"
+        },
+	
+	 {
+            "id": 33,
+            "name": "Practical Prescriber ",
+            "price": 1500,
+            "genre": "Medicine",
+            "type": "old",
+            "description": "This concise and comprehensive text covers a wide variety of ailments including some medical emergencies"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/357/9789389587357.jpg",
+            "quantity": 7,
+            "authors": [" Hiralal Konar "],
+            "publication": " Jp Medical Ltd"
+        },
+
+	 {
+            "id": 34,
+            "name": "A Million Kisses in Your Lifetime ",
+            "price": 350,
+            "genre": "Romance",
+            "type": "new",
+            "description": "A Million Kisses in Your Lifetime"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/291/9781945522291.jpg",
+            "quantity": 7,
+            "authors": ["Murphy, Monica"],
+            "publication": " Em Publishing"
+        },
+
+	 {
+            "id": 35,
+            "name": "Red, White & Royal Blue",
+            "price": 350,
+            "genre": "Romance",
+            "type": "new",
+            "description": "What happens when America's First Son falls in love with the Prince of Wales?"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/776/9781250316776.jpg",
+            "quantity": 5,
+            "authors": ["Murphy, Monica"],
+            "publication": " Em Publishing"
+        },
+
+	 {
+            "id": 36,
+            "name": "A Samurai Dream of Azad Hind: Rash Behari Bose",
+            "price": 269,
+            "genre": "Biography",
+            "type": "new",
+            "description": "A Samurai Dream of Azad Hind: Rash Behari Bose"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/849/9789390961849.jpg",
+            "quantity": 10,
+            "authors": ["Roy, Prasun "],
+            "publication": "Vitasta Publishing Pvt.Ltd"
+        },
+
+	  {
+            "id": 37,
+            "name": "Win All Your Battles",
+            "price": 150,
+            "genre": "Biography",
+            "type": "new",
+            "description": "Win All Your Battles"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/817/9789394407817.jpg",
+            "quantity": 15,
+            "authors": ["Vishwas Nangre Patil "],
+            "publication": "HarperCollins India"
+        },
+
+	 {
+            "id": 38,
+            "name": "Brain Activity Book for Kids - 200+ Activities for Age 3+",
+            "price": 149,
+            "genre": "Children story",
+            "type": "old",
+            "description": "The 200+ activities book is ideal to introduce math, language and logic to preschoolers"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/294/9789391924294.jpg",
+            "quantity":10,
+            "authors": ["Maple Press "],
+            "publication": "Maple Press Pvt Ltd"
+        },
+   
+	{
+            "id": 39,
+            "name": "Grandma's Bag of Stories",
+            "price": 149,
+            "genre": "Children story",
+            "type": "old",
+            "description": "Who can resist a good story, especially when it's being told by Grandma? "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/623/9780143333623.jpg",
+            "quantity":10,
+            "authors": ["Maple Press "],
+            "publication": "Maple Press Pvt Ltd"
+        },
+
+	 {
+            "id": 40,
+            "name": "India After Gandhi: The History of the Worlds Largest Democracy",
+            "price": 159,
+            "genre": "History",
+            "type": "new",
+            "description": "Ramachandra Guha was born in Dehradun in 1958 and educated in Delhi and Calcutta."
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/979/9789382616979.jpg",
+            "quantity":10,
+            "authors": ["Ramachandra Guha"],
+            "publication": "Pan Maillan India"
+        },
     ]
 }
