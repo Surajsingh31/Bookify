@@ -1,0 +1,278 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "name": "It Ends with Us",
+            "price": 258,
+            "genre": "Romance",
+            "type": "new",
+            "description": "brave and heartbreaking novel that digs its claws into you and doesn't let go, long after you've finished it",
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/368/9781501110368.jpg",
+            "quantity": 20,
+            "authors": ["Colleen Hoover"],
+            "publication": " Atria Books"
+        },
+        {
+            "id": 2,
+            "name": "It Starts with Us ",
+            "price": 390,
+            "genre": "Romance",
+            "type": "old",
+            "description": "A novel that explores themes of wealth, love, and decadence in the Roaring Twenties.",
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/179/9781398518179.jpg",
+            "quantity": 25,
+            "authors": ["Colleen Hoover"],
+            "publication": " Atria Books"
+        },
+        
+        {
+            "id": 3,
+            "name": "Your Time Will Come",
+            "price": 359,
+            "genre": "Romance",
+            "type": "new",
+            "description": "A story about a couple who's Love can break the strongest of men and they are the ones to fall hard",
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/704/9789354400704.jpg",
+            "quantity": 30,
+            "authors": ["Saranya Umakanthan"],
+            "publication": " Fingerprint! Publishing"
+        },
+	  
+	  {
+            "id": 4,
+            "name": "Touch of Eternity",
+            "price": 350,
+            "genre": "Romance",
+            "type": "old",
+            "description": "A story about a couple  to prove their love and tell the world that it is love that can make the impossible, possible.",
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/341/9780143448341.jpg",
+            "quantity": 30,
+            "authors": ["Datta Roy"],
+            "publication": " India Penguin Metro Reads"
+        },
+	
+        {
+            "id": 5,
+            "name": "The Love Hypothesis",
+            "price": 359,
+            "genre": "Romance",
+            "type": "new",
+            "description": "When a fake relationship between scientists meets the irresistible force of attraction, it throws one woman's carefully calculated theories on love into chaos..",
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/823/9780593336823.jpg",
+            "quantity": 30,
+            "authors": ["Ali Hazelwood"],
+            "publication": " India Penguin Metro Reads"
+        },
+        
+        {
+            "id": 6,
+            "name": "That Night",
+            "price": 150,
+            "genre": "Romance",
+            "type": "new",
+            "description": "What happens when an innocent prank goes horribly wrong?"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/877/9780143451877.jpg",
+            "quantity": 30,
+            "authors": ["Ali Hazelwood"],
+            "publication": "Ebury Press"
+        },
+        
+       {
+            "id": 7,
+            "name": "Ikigai",
+            "price": 391,
+            "genre": "Biography",
+            "type": "old",
+            "description": "Even if we don't know it yet.Ikigai translates as `a reason to live' or `a reason to jump out of bed in the morning"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/895/9781786330895.jpg",
+            "quantity": 30,
+            "authors": ["Hector"],
+            "publication": "CornerStone"
+        },
+
+	 {
+            "id": 8,
+            "name": "Bihari Diaries",
+            "price": 179,
+            "genre": "Biography",
+            "type": "new",
+            "description": "Bihar Diaries narrates the thrilling account of how Amit Lodha arrested Samant Pratap"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/350/9780143444350.jpg",
+            "quantity": 30,
+            "authors": ["Amith Lodha"],
+            "publication": "Penguin"
+        },
+
+	  {
+            "id": 9,
+            "name": "Man Searching For Meaning",
+            "price": 179,
+            "genre": "Biography",
+            "type": "old",
+            "description": "A prominent Viennese psychiatrist before the war, after the war"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/242/9781846041242.jpg",
+            "quantity": 30,
+            "authors": ["Victor"],
+            "publication": "BBC Books"
+        },
+
+	  {
+            "id": 10,
+            "name": "Wings of Fire",
+            "price": 3599,
+            "genre": "Biography",
+            "type": "new",
+            "description": "Wings of Fire: An Autobiography is an autobiographical novel that tells the readers a story about unlocking their inner potential."
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/466/9788173711466.jpg",
+            "quantity": 30,
+            "authors": ["APJ Abdul Kalam"],
+            "publication": "Sangam Books"
+        },
+        
+       {
+            "id": 11,
+            "name": "Harry Potter",
+            "price": 3599,
+            "genre": "Fiction",
+            "type": "new",
+            "description": "Harry Potter can’t wait for his school time with the dire Dursleys holidays to end. "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/669/9781408855669.jpg",
+            "quantity": 30,
+            "authors": ["JK Rowlings"],
+            "publication": "BloomsBurry"
+        },
+       
+        {
+            "id": 12,
+            "name": "Harry Potter Home Coming",
+            "price": 3599,
+            "genre": "Fiction",
+            "type": "new",
+            "description": "Harry Potter can’t wait for his holidays with the school time to end. "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/669/9781408855669.jpg",
+            "quantity": 30,
+            "authors": ["JK Rowlings"],
+            "publication": "BloomsBurry"
+        },
+      
+        {
+            "id": 13,
+            "name": "Harry Potter part 3",
+            "price": 3590,
+            "genre": "Fiction",
+            "type": "old",
+            "description": "When a letter arrives for unhappy but ordinary Harry Potter, a decade-old secret is revealed to him that apparently he’s the last to know "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/652/9781408855652.jpg",
+            "quantity": 30,
+            "authors": ["JK Rowlings"],
+            "publication": "BloomsBurry"
+        },
+
+        {
+            "id": 14,
+            "name": "THE WHEELS ON THE BUS (MY FIRST PLAY BOX)",
+            "price": 259,
+            "genre": "Children story",
+            "type": "old",
+            "description": "The Wheels On The Bus Go Round And Round Hop Aboard The Bus And Have Lots Of Fun Singing Along To The Classic Song. "
+            "image_path": "https://img.bookchor.com/images/cover/756/9781784405663.jpg",
+            "quantity": 30,
+            "authors": ["Andrew june"],
+            "publication": "	Harpercollins Publisher"
+        },
+		
+	   {
+            "id": 15,
+            "name": "THROUGH THE LOOKING-GLASS",
+            "price": 259,
+            "genre": "Children story",
+            "type": "old",
+            "description": " Alice's Second Set Of Adventures Takes Her Into A World Even Curiouser Than Wonderland."
+            "image_path": "https://img.bookchor.com/images/cover/bc/9781405055680_16753968670.jpg",
+            "quantity": 30,
+            "authors": ["Andrew june"],
+            "publication": "	Harpercollins Publisher"
+        },
+
+	  {
+            "id": 16,
+            "name": "PRINCESS (I\'D LIKE TO BE) _TOUCH AND FEEL",
+            "price": 259,
+            "genre": "Children story",
+            "type": "new",
+            "description": "Wouldn't be wonderful to be a princess? "
+            "image_path": "https://img.bookchor.com/images/cover/bc/9780857342010.jpg",
+            "quantity": 30,
+            "authors": ["Mahipin"],
+            "publication": "	Igloo Books Ltd"
+        },
+
+
+        {
+            "id": 17,
+            "name": "India's Ancient Past",
+            "price": 1100,
+            "genre": "History",
+            "type": "new",
+            "description": "accessible text on the ancient period of Indian history "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/859/9780195687859.jpg",
+            "quantity": 30,
+            "authors": [" R S Sharma "],
+            "publication": "Oxford University Press"
+        },
+	 
+	  {
+            "id": 17,
+            "name": "India's Ancient Past",
+            "price": 1100,
+            "genre": "History",
+            "type": "new",
+            "description": "accessible text on the ancient period of Indian history "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/859/9780195687859.jpg",
+            "quantity": 30,
+            "authors": [" R S Sharma "],
+            "publication": "Oxford University Press"
+        },
+	
+	  {
+            "id": 18,
+            "name": "Chanaky Neethi",
+            "price": 1500,
+            "genre": "History",
+            "type": "old",
+            "description": "India's Econoic and Political Science "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/483/9788128400483.jpg",
+            "quantity": 30,
+            "authors": ["Chathurvedhi "],
+            "publication": "Global Diamonds"
+        },
+	 
+	  {
+            "id": 19,
+            "name": "Bharat Ka Prachin Itihas",
+            "price": 1500,
+            "genre": "History",
+            "type": "new",
+            "description": "The History of India "
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/305/9780199489305.jpg",
+            "quantity": 30,
+            "authors": ["Ram Sharan Sharma "],
+            "publication": "Global Diamonds"
+        },
+
+	  {
+            "id": 20,
+            "name": "Bose",
+            "price": 1500,
+            "genre": "History",
+            "type": "new",
+            "description": "An Indian Hero"
+            "image_path": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/008/9780670096008.jpg",
+            "quantity": 30,
+            "authors": ["Chandrachur Ghose "],
+            "publication": "Penguin Viking"
+        },
+	  
+	 
+    ]
+}
