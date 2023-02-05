@@ -9,7 +9,7 @@ public class EBook {
 
     @Id@GeneratedValue
     private int bookId;
-    private String ebookName;
+    private String eBookName;
     private String genre;
     private double price;
     private String description;
@@ -23,7 +23,7 @@ public class EBook {
     public EBook(int bookId, String ebookName, String genre, double price, String description, String imagePath,
             String link) {
         this.bookId = bookId;
-        this.ebookName = ebookName;
+        this.eBookName = ebookName;
         this.genre = genre;
         this.price = price;
         this.description = description;
@@ -49,14 +49,14 @@ public class EBook {
      * @return String return the ebookName
      */
     public String getEbookName() {
-        return ebookName;
+        return eBookName;
     }
 
     /**
      * @param ebookName the ebookName to set
      */
     public void setEbookName(String ebookName) {
-        this.ebookName = ebookName;
+        this.eBookName = ebookName;
     }
 
     /**
