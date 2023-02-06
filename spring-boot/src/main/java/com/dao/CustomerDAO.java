@@ -16,6 +16,24 @@ public class CustomerDAO {
 		return custRepository.findAll();
 	}
 
+    public Customer getCustomerById(int customerId) {
+        return custRepository.findById(customerId).orElse(null);
+    }
+
+    public Customer getCustomerByName(String customerName){
+        return custRepository.getByName(customerName);
+    }
+
+    public Customer registerCustomer(Customer cust){
+        return custRepository.save(cust);
+    }
+
+    public void deleteCustomerById(int custId){
+
+         custRepository.deleteById(custId);
+
+    }
+
 
 
 
