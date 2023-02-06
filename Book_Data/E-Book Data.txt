@@ -469,5 +469,14 @@
     "imagepath": "https://m.media-amazon.com/images/I/918nd11BIoL.jpg",
     "link": ""
   },
+  {
+    "id": ,
+    "name": "the story of my life",
+    "genre": "Autography",
+    "price": 123.23,
+    "description": "",
+    "imagepath": "https://m.media-amazon.com/images/I/918nd11BIoL.jpg",
+    "link": ""
+  },
 ]
 }
