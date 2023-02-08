@@ -1,0 +1,482 @@
+{
+"E-Books":[
+  {
+    
+    "id": ,
+    "name": "Things Fall Apart",
+    "genre": "Love Story",
+    "price": 209,
+    "description": "Things Fall Apart is about the connection between the tragic downfall of Okonkwo, who fate and temperamental weakness combine to destroy, and the destruction of his culture and society as the Igbo way of life is assailed by forces they do not understand and are unprepared to face.",
+    "imagepath": "https://m.media-amazon.com/images/I/91yNF5xdR4L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Fairy tales",
+    "genre": "Adventures Story",
+    "price": 105,
+    "description": "A fairy tale is a short story that belongs to the folklore genre. Such stories typically feature magic, enchantments, and mythical or fanciful beings.",
+    "imagepath": "https://yt3.googleusercontent.com/ytc/AMLnZu92Bu_NNxTZMZjKJzOrNVbROtsup1t09Y8Q7t55Aw=s900-c-k-c0x00ffffff-no-rj",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Divine Comedy",
+    "genre": "Comedy",
+    "price": 108,
+    "description":"The Divine Comedy is an Italian narrative poem by Dante Alighieri, begun c. 1308 and completed around 1321, shortly before the author's death.",
+    "imagepath": "",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Sumer and Akkadian Empire",
+    "genre": "Fictional",
+    "price": 200,
+    "description": "The Akkadian Empire was the first ancient empire of Mesopotamia after the long-lived ... Harvest was in the late spring and during the dry summer months.",
+    "imagepath": "https://www.booktopia.com.au/covers/200/9781956296440/4913/the-akkadian-empire.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Book of Job",
+    "genre": "Story Telling",
+    "price": 167,
+    "description": "This legend concerns Job, a prosperous man of outstanding piety. Satan acts as an agent provocateur to test whether or not Job's piety is rooted merely in his prosperity. But faced with the appalling loss of his possessions, his children, and finally his own health, Job still refuses to curse God.",
+    "imagepath": "https://m.media-amazon.com/images/I/51IEShge5xL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "One thousand and one night",
+    "genre": "Fictional",
+    "price": 108,
+    "description": "One Thousand and One Nights is a collection of Middle Eastern folk tales compiled in Arabic during the Islamic Golden Age.",
+    "imagepath": "https://m.media-amazon.com/images/I/51kg-1A+3kL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Pride and Prejudice",
+    "genre": "Historical",
+    "price": 105,
+    "description": "Pride and Prejudice is an 1813 novel of manners by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist",
+    "imagepath": "https://m.media-amazon.com/images/M/MV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE@._V1_.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Old Norse",
+    "genre": "Mystery",
+    "price": 90,
+    "description": "Books shelved as old-norse: The Prose Edda by Snorri Sturluson, The Poetic Edda: Stories of the Norse Gods and Heroes by Anonymous peoples.",
+    "imagepath": "https://m.media-amazon.com/images/I/71LNsKTzzwL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Bharat ki Khoj",
+    "genre": "Historical",
+    "price": 32,
+    "description": "Bharat Ek Khoj is a series of 53 episodes about the history of India. It is based on Discovery of India (1946), a book by Jawaharlal Nehru.",
+    "imagepath": "https://rukminim1.flixcart.com/image/416/416/kv9urgw0/regionalbooks/b/1/n/unique-bharat-ki-khoj-original-imag87q4bacquznb.jpeg?q=70",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Malloy, Malone Dies, The Unnamble,the Triology",
+    "genre": "Mystery",
+    "price": 320,
+    "description": "Molloy, the first of these masterpieces, appeared in French in 1951. It was followed seven months later by Malone Dies and two years later by The Unnamable.",
+    "imagepath": "https://m.media-amazon.com/images/I/412q0u9zvvL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Decameron",
+    "genre": "Historical Fiction",
+    "price": 105,
+    "description": "The Decameron is a tale of renewal and recreation in defiance of a decimating pandemic. Boccaccio attributes the cause of this terrible plague to either malignant celestial influences or divine punishment for the iniquity of Florentine society.",
+    "imagepath": "https://m.media-amazon.com/images/M/MV5BZTY3ZjM0NTctNjc0Mi00OGU0LWI4OTQtYzc1ZGI2MTg2OTZiXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Ficciones",
+    "genre": "Autobiography",
+    "price": 234,
+    "description": "Ficciones is a classic collection of seventeen short stories by acclaimed Argentine author Jorge Luis Borges, originally published in the 1940s in Spanish",
+    "imagepath": "https://www.madrasshoppe.com/193744-large_default/ficciones-everyman-s-library-classics-s-borges-jorge-luis.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Wuthering Height",
+    "genre": "Love Story",
+    "price": 123,
+    "description": "Wuthering Heights", Emily Brontë's only novel, is one of the pinnacles of 19th-century English literature. It's the story of Heathcliff, an orphan who falls in love with a girl above his class, loses her, and devotes the rest of his life to wreaking revenge on her family",
+    "imagepath": "https://m.media-amazon.com/images/I/71TjAcMTDML.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Stranger",
+    "genre": "Mystery",
+    "price": 343,
+    "description": "The Stranger is an eight-part British mystery thriller miniseries written primarily by Danny Brocklehurst and based on the 2015 Harlan Coben novel.",
+    "imagepath": "https://m.media-amazon.com/images/M/MV5BNWNlYzA2OWUtMWE1Mi00ZjMyLWExY2ItZDVlZmQ0YTMyZmEyXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_FMjpg_UX1000_.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Poems",
+    "genre": "Children Literature",
+    "price": 108,
+    "description": "Collections of books from variety of different way",
+    "imagepath": "https://m.media-amazon.com/images/I/41CVtQ6NehL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The journey to end and night",
+    "genre": "Mystery",
+    "price": 155,
+    "description": "Journey to the End of the Night is the first novel by Louis-Ferdinand Céline. This semi-autobiographical work follows the adventures of Ferdinand Bardamu.",
+    "imagepath": "https://m.media-amazon.com/images/M/MV5BOTUwNTE0NTU1M15BMl5BanBnXkFtZTcwODc4NTgzMQ@@._V1_.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Canterbury Tales",
+    "genre": "Romance Novel",
+    "price": 175,
+    "description": "The Canterbury Tales is a collection of twenty-four stories that runs to over 17,000 lines written in Middle English by Geoffrey Chaucer between 1387 and 1401",
+    "imagepath": "https://149645218.v2.pressablecdn.com/wp-content/uploads/2018/02/canterbury-sales.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Stories we neve tell",
+    "genre": "Adventures",
+    "price": 125,
+    "description": "Such was the story of Jhanvi, who is a budding social media influencer. She appears to have it all together, living her ideal life, but something is missing: Jhanvi has this impossible need that drives her to be more perfect than any person could possibly be. And the story of Ashray, who had a rocky start in life.",
+    "imagepath": "https://rukminim1.flixcart.com/image/416/416/k47cgi80/book/0/4/3/stories-we-never-tell-original-imafmgaumjkbyevp.jpeg?q=70",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Nostromo",
+    "genre": "Thriller",
+    "price": 170,
+    "description": "Nostromo: A Tale of the Seaboard is a 1904 novel by Joseph Conrad, set in the fictitious South American republic of "Costaguana".",
+    "imagepath": "https://m.media-amazon.com/images/I/41SzXTMCilL.jpg",
+    "link": ""
+  },
+  {
+     "id": ,
+    "name": "Berlin Alexenderplatz",
+    "genre": "Fiction",
+    "price": 234,
+    "description": "Berlin Alexanderplatz is a 1929 novel by Alfred Döblin. It is considered one of the most important and innovative works of the Weimar Republic.",
+    "imagepath": "https://m.media-amazon.com/images/I/61DZKY-iEML.jpg",
+    "link": ""
+  },
+  {
+     "id": ,
+    "name": "Crime and Punishment",
+    "genre": "Mystery",
+    "price": 593,
+    "description": "This “Crime & Punishment” journey works for him and of course for reader to look upon the possibility of life in the depths of despair and darkness of poverty.",
+    "imagepath": "https://kbimages1-a.akamaihd.net/c8f66724-16c7-4e30-ab42-2e205435eb20/1200/1200/False/crime-and-punishment-by-fyodor-dostoyevsky.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Idiot",
+    "genre": "Novel",
+    "price": 145,
+    "description": "The Idiot is a novel by the 19th-century Russian author Fyodor Dostoevsky. It was first published serially in the journal The Russian Messenger in 1868–69.",
+    "imagepath": "https://m.media-amazon.com/images/I/71FKmTsluHL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Possessed",
+    "genre": "Action",
+    "price": 212,
+    "description": "The Possessed, novel by Fyodor Dostoyevsky, published in Russian in 1872 as Besy. The book, also known in English as The Devils and The brown man.",
+    "imagepath": "https://m.media-amazon.com/images/I/51necgzxDBL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Brother Karamzov",
+    "genre": "Fantasy",
+    "price": 126,
+    "description": "Set in 19th-century Russia, The Brothers Karamazov is a passionate philosophical novel that enters deeply into questions of God, free will, and morality.",
+    "imagepath": "https://m.media-amazon.com/images/I/71OZJsgZzQL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Middlemarch",
+    "genre": "Travel Literature",
+    "price": 175,
+    "description": "Middlemarch, A Study of Provincial Life is a novel by the English author Mary Anne Evans, who wrote as George Eliot. It first appeared in eight installments .",
+    "imagepath": "https://m.media-amazon.com/images/I/81C9P6xJUwL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Invisible man",
+    "genre": "Mystery",
+    "price": 159,
+    "description": "The Invisible Man, science-fiction novel by H.G. Wells, published in 1897. The story concerns the life and death of a scientist named Griffin who has gone mad. Having learned how to make himself invisible, Griffin begins to use his invisibility for nefarious purposes, including murder.",
+    "imagepath": "https://m.media-amazon.com/images/I/71j-wyySlwL.jpg",
+    "link": ""
+  },
+  {
+     "id": ,
+    "name": "Medea",
+    "genre": "Literature",
+    "price": 153,
+    "description": "Medea, in Greek mythology, an enchantress who helped Jason, leader of the Argonauts, to obtain the Golden Fleece from her father, King Aeëtes of Colchis. She was of divine descent and had the gift of prophecy. She married Jason and used her magic powers and advice to help him.",
+    "imagepath": "https://www.thepeculiarbrunette.com/wp-content/uploads/2022/09/Medea-in-Greek-Mythology.png",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Absalom,Abasalom!",
+    "genre": "Novel",
+    "price": 333,
+    "description": "Absalom, Absalom! is a novel about the meaning of history, and about the extreme pressure of the past, particularly in the South, upon the inhabitants of the present. More importantly, it is about the doubtful process of coming to know, reconstruct, and come to grips with history.",
+    "imagepath": "https://m.media-amazon.com/images/I/51fgWV9iX8L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Sound and the Fury",
+    "genre": "Thriller",
+    "price": 324,
+    "description": "The Sound and the Fury is a novel by the American author William Faulkner. It employs several narrative styles, including stream of consciousness.",
+    "imagepath": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/The_Sound_and_the_Fury_%281929_1st_ed_dust_jacket%29.jpg/1200px-The_Sound_and_the_Fury_%281929_1st_ed_dust_jacket%29.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Madame Bovary",
+    "genre": "Novel",
+    "price": 173,
+    "description": "Madame Bovary originally published as Madame Bovary: Provincial Manners is a novel by French writer Gustave Flaubert, published in 1856.",
+    "imagepath": "https://m.media-amazon.com/images/I/61ymVbJsZkL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Sentimental Education",
+    "genre": "Literature",
+    "price": 122,
+    "description": "Sentimental Education (French: L'Éducation sentimentale, 1869) is a novel by Gustave Flaubert. Considered one of the most influential novels of the 19th century.",
+    "imagepath": "https://kbimages1-a.akamaihd.net/3e0c6ce2-1e44-4fdd-bdbc-e5f37db11430/1200/1200/False/sentimental-education.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Thirteen Reason Why",
+    "genre": "Mystery",
+    "price": 155,
+    "description": "13 Reasons Why by Jay Asher is a book that details the story of Hannah Baker, a teenager in high school who has died by suicide. The reasons for her suicide are outlined in a set of tapes that are mailed between the people that she feels were involved in her decision.",
+    "imagepath": "https://m.media-amazon.com/images/I/51syyO7qB5L.jpg",
+    "link": ""
+  },
+  {
+   "id": ,
+    "name": "The Story of an Hour",
+    "genre": "Fiction",
+    "price": 132,
+    "description": ""The Story of an Hour" by Kate Chopin is about Louise Mallard, a woman in a traditional Victorian marriage, who receives the news that her husband was killed in an accident. After her grief subsides, she begins to see opportunity and freedom in her future",
+    "imagepath": "https://www.literaryladiesguide.com/wp-content/uploads/2019/06/Kate-Chopin-The-Story-An-Hour-1.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Book Thief",
+    "genre": "Mystery",
+    "price": 135,
+    "description": "The novel is about the adventures of Liesel Meminger in Nazi Germany during World War II. By personifying "Death" as a tangible being who narrates the story, the novel presents a unique perspective into the world of the victims of the war.",
+    "imagepath": "https://m.media-amazon.com/images/I/51BV65y0-lL._SX503_BO1,204,203,200_.jpg",
+    "link": ""
+  },
+   {
+    "id": ,
+    "name": "The tale of Genji",
+    "genre": "Historical",
+    "price": 532,
+    "description": "The Tale of Genji is a classic work of Japanese literature written in the early 11th century by the noblewoman and lady-in-waiting Murasaki Shikibu.",
+    "imagepath": "https://kbimages1-a.akamaihd.net/4acf789f-ab7a-4c95-9ddd-d725518f4477/1200/1200/False/the-tale-of-genji-36.jpg",
+    "link": ""
+  },
+ {
+    "id": ,
+    "name": "The Man Whithout Qualities",
+    "genre": "Biography",
+    "price": 325,
+    "description": "Part satire, part visionary epic, part intellectual tour de force, The Man Without Qualities by Robert Musil is a work of immeasurable importance.",
+    "imagepath": "https://m.media-amazon.com/images/I/514BSqGPB0L.jpg",
+    "link": ""
+  },
+ {
+    "id": ,
+    "name": "The Death, An Inside Story",
+    "genre": "Fiction",
+    "price": 353,
+    "description": "DEATH. Yogi, mystic and visionary, Sadhguru is a spiritual master with a difference. Absolute clarity of perception places him in a unique space,.",
+    "imagepath": "https://m.media-amazon.com/images/I/91JO2pVO7RL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Nineteen eight four",
+    "genre": "Adventures",
+    "price": 323,
+    "description": "Nineteen Eighty-Four (also published as 1984) is a dystopian social science fiction novel and cautionary tale by English writer George Orwell.",
+    "imagepath": "https://m.media-amazon.com/images/I/517atElpp5L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "A placed called home",
+    "genre": "Non-Fiction",
+    "price": 332,
+    "description": "Between taking care of her heritage home, her two young daughters and her fabulous relationship with her mother-in-law, Alka's life feels complete. But when secrets about her past that she has fiercely guarded are exposed, they threaten to destroy her life.",
+    "imagepath": "https://m.media-amazon.com/images/I/51+AxwPLV8L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "You only live once",
+    "genre": "Mystery",
+    "price": 232,
+    "description": "The story is about Alara searching for Elisha and in the process meeting Aarav and Ricky among others in Goa, but at the end, each of them realize they are searching for something more than a missing person. And that is exactly what the title translates into — You live only once",
+    "imagepath": "https://m.media-amazon.com/images/I/71dNsRuYL7L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Guliver's Travel",
+    "genre": "Adventures",
+    "price": 135,
+    "description": "Gulliver's Travels' main idea is the inherent amusement of human tradition and habit, as well as the relative nature of ethics and society dependent on historical precedent. Gulliver's Travels, like so many of Jonathan Swift's works, is primarily a satire of British monarchy and Imperialism",
+    "imagepath": "https://m.media-amazon.com/images/I/71I8zpHmu0L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Anna Karenina",
+    "genre": "Biography",
+    "price": 344,
+    "description": "Anna Karenina is a novel that beguiles and intrigues. The world it depicts and dissects remains fascinating in itself. Its characters are among the most memorable ever created. And the targets and outward forms of social disapproval may be different now to what they were then, but they nevertheless exist.",
+    "imagepath": "https://m.media-amazon.com/images/I/81cf52NOKoS.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "War and Peace",
+    "genre": "Literature",
+    "price": 333,
+    "description": "War and Peacebroadly focuses on Napoleon's invasion of Russia in 1812 and follows three of the most well-known characters in literature: Pierre Bezukhov, the illegitimate son of a count who is fighting for his inheritance and yearning for spiritual fulfillment.",
+    "imagepath": "https://m.media-amazon.com/images/I/81CZkbmSQ7S.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Halmet",
+    "genre": "Fiction",
+    "price": 323,
+    "description": "Helmet for My Pillow is the personal narrative written by World War II United States Marine Corps veteran, author, and military historian Robert Leckie.",
+    "imagepath": "https://m.media-amazon.com/images/I/91ki4va-0JL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "King Lear",
+    "genre": "Literature",
+    "price": 123,
+    "description":"King Lear divides his kingdom among the two daughters who flatter him and banishes the third one who loves him. His eldest daughters both then reject him at their homes, so Lear goes mad and wanders through a storm.",
+    "imagepath": "https://wordsworth-editions.com/wp-content/uploads/2022/03/9781853260957.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Othello",
+    "genre": "Adventures",
+    "price": 633,
+    "description": "Iago is furious about being overlooked for promotion and plots to take revenge against his General; Othello, the Moor of Venice. Iago manipulates Othello into believing his wife Desdemona is unfaithful, stirring Othello's jealousy. Othello allows jealousy to consume him, murders Desdemona, and then kills himself.",
+    "imagepath": "https://kbimages1-a.akamaihd.net/b8a4b6a7-d0c9-4fec-9a99-3e5d24bc16e0/1200/1200/False/othello-the-moor-of-venice.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Odipus of the King",
+    "genre": "Stroy",
+    "price": 353,
+    "description": "Oedipus, in Greek mythology, the king of Thebes who unwittingly killed his father and married his mother. Homer related that Oedipus's wife and mother hanged herself when the truth of their relationship became known, though Oedipus apparently continued to rule at Thebes until his death.",
+    "imagepath": "https://m.media-amazon.com/images/I/51BsktU1A1L._SY264_BO1,204,203,200_QL40_ML2_.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "the story of Tenaliram",
+    "genre": "Adventure",
+    "price": 56,
+    "description": "One day Tenali Rama and his friend were lying on a hammock and enjoying the gentle sea breeze. It was a beautiful day, and both men were smiling to themselves.",
+    "imagepath": "https://m.media-amazon.com/images/I/81bSnM5Pt1L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "The Death of Ivan Ilyich",
+    "genre": "Mystery",
+    "price": 139,
+    "description": "Leo Tolstoy's novella, The Death of Ivan Ilych, is a classic piece of literature that allows a view of the dying process in an ordinary human being, and presents us with an opportunity to observe, not only the intersection of medicine and humanities, but also that of critical care and palliative medicine.",
+    "imagepath": "https://m.media-amazon.com/images/I/8188jpenx5L.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "the Adventure of Huckleberry Finn",
+    "genre": "Adventure",
+    "price": 322,
+    "description": "Mark Twain's classic The Adventures of Huckleberry Finn (1884) is told from the point of view of Huck Finn, a barely literate teen who fakes his own death to escape his abusive, drunken father. He encounters a runaway slave named Jim, and the two embark on a raft journey down the Mississippi River.",
+    "imagepath": "https://m.media-amazon.com/images/I/51l4CWBf1YL._SL500_.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "Sankrit",
+    "genre": "Literature",
+    "price": 123,
+    "description": "class first NCERT Sansrit Book",
+    "imagepath": "https://m.media-amazon.com/images/I/A1sIuYCfV2L.jpg",
+    "link": ""
+  },
+   {
+    "id": ,
+    "name": "Ramayana",
+    "genre": "Literature",
+    "price": 0,
+    "description": "Enlighten yourself with one of the greatest epics in human history - Valmiki Ramayan and RamCharitra Manas by Tulsidas.",
+    "imagepath": "https://m.media-amazon.com/images/I/918nd11BIoL.jpg",
+    "link": ""
+  },
+  {
+    "id": ,
+    "name": "the story of my life",
+    "genre": "Autography",
+    "price": 123.23,
+    "description": "",
+    "imagepath": "https://m.media-amazon.com/images/I/918nd11BIoL.jpg",
+    "link": ""
+  },
+]
+}
