@@ -9,6 +9,7 @@ public class Customer {
 
     @Id@GeneratedValue
     private int custId;
+
 	private String custName;
 	private String email;
 	private String gender;
@@ -21,6 +22,7 @@ public class Customer {
     private String state;
     private String country;
     private int coins;
+    private String status;
 
 
     public Customer() {
@@ -43,11 +45,8 @@ public class Customer {
         this.state = state;
         this.country = country;
         this.coins = coins;
+        
     }
-
-    
-
-    
 
     
 
@@ -234,13 +233,9 @@ public class Customer {
     }
 
 
-    @Override
-    public String toString() {
-        return "Customer [custId=" + custId + ", custName=" + custName + ", email=" + email + ", gender=" + gender
-                + ", phoneNumber=" + phoneNumber + ", password=" + password + ", type=" + type + ", address=" + address
-                + ", pincode=" + pincode + ", city=" + city + ", state=" + state + ", country=" + country + ", coins="
-                + coins + "]";
-    }
+   
+
+
 
     
 
