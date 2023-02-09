@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+declare var jQuery : any;
 
 @Component({
   selector: 'app-modalbox',
@@ -8,26 +8,15 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalboxComponent {
   
-  closeModal: string | undefined;
-  
-  constructor(private modalService: NgbModal) {}
-    
-  triggerModal(content: any) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((res) => {
-      this.closeModal = `Closed with: ${res}`;
-    }, (res) => {
-      this.closeModal = `Dismissed ${this.getDismissReason(res)}`;
-    });
+  ngOnInit(): void {
+
+
+      
   }
-  
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return  `with: ${reason}`;
-    }
+  edit(){
+    console.log("abc");
+    jQuery("#myModal").modal('show');
+
   }
   
 }

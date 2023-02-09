@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
-declare var $: any;
+import { Component, OnInit } from '@angular/core';
+declare var jQuery : any;
 
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
-export class TestComponent {
-  constructor() { }
+export class TestComponent implements OnInit{
+  ngOnInit(): void {
 
-  openModal() {
-    $('#myModal').modal('show');
+
+      
+  }
+  edit(){
+    console.log("abc");
+    jQuery("#myModal").modal('show');
+
   }
  
 }

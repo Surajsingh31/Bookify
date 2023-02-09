@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 declare var jQuery : any;
 
 
@@ -16,7 +15,7 @@ export class ProfilecardComponent implements OnInit {
       
   }
   edit(){
-
+    console.log("abc");
     jQuery("#myModal").modal('show');
 
   }
