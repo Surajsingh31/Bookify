@@ -34,6 +34,26 @@ public class BookController {
 
         return bookDAO.getBookByName(bookName);
     }
+    @GetMapping("getBooksByGenre/{genre}")
+    public List<Book> getBooksBasedOnGenre(@PathVariable("genre") String genre){
+        return bookDAO.getBooksByGenre(genre);
+    }
+    @GetMapping("getBooksByPrice/{genre}")
+    public List<Book> getBooksByPrice(@PathVariable("genre") String genre){
+        return bookDAO.getBooksByPrice(genre);
+    }
+    @GetMapping("getBooksByPriceHigh/{genre}")
+    public List<Book> getBooksByPriceHigh(@PathVariable("genre") String genre){
+        return bookDAO.getBooksByPriceHigh(genre);
+    }
+    @GetMapping("getBooksByAlphabet/{genre}")
+    public List<Book> getBooksByAlphabet(@PathVariable("genre") String genre){
+        return bookDAO.getBooksByAlphabet(genre);
+    }
+    @GetMapping("getBooksByAlphabetDesc/{genre}")
+    public List<Book> getBooksByAlphabetDesc(@PathVariable("genre") String genre){
+        return bookDAO.getBooksByAlphabetDesc(genre);
+    }
 
     @PostMapping("/registerBook")
     public String registerBook(@RequestBody Book book){

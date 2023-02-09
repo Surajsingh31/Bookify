@@ -1,0 +1,22 @@
+<div id="div1">
+
+    <h2>Shopping Cart</h2>
+    <p>Price</p>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" *ngFor="let book of cartItems">
+                <div class="card" style="width:100%;margin-bottom:20px">
+                    <img class="card-img-top" src="{{book.imagePath}}" style="width:100%" height="250px">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title"> {{book.bookName}} </h4>
+                        <p class="card-text" align="left"> {{book.description}}</p>
+                        <h5 align="left">Price: ₹{{book.price}}&nbsp;</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
