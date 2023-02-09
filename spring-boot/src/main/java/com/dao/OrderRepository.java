@@ -14,8 +14,8 @@ public interface OrderRepository extends JpaRepository<Order,Integer> {
 	@Query("from Order o where o.orderName = :orderName")
 	Order findByName(@Param("orderName") String orderName);
 
-	@Query("from Order o where o.orderDate = :orderDate")
-	Order findByDateOrder(@Param("orderDate") Date orderDate);
+	// @Query("from Order o where o.orderDate = :orderDate")
+	// Order findByDateOrder(@Param("orderDate") Date orderDate);
     
 } 
 

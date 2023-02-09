@@ -34,12 +34,12 @@ public class OrderController {
         return new Order();
     }
 
-    @RequestMapping("/getOrderByDate/{orderDate}")
-    public Order getOrderByDate(@PathVariable("orderDate") Date orderDate){
-        Order order=orderDAO.getOrderByDate(orderDate);
-        if(order!=null)
-            return order;
-        return new Order();
-    }
+    // @RequestMapping("/getOrderByDate/{orderDate}")
+    // public Order getOrderByDate(@PathVariable("orderDate") Date orderDate){
+    //     Order order=orderDAO.getOrderByDate(orderDate);
+    //     if(order!=null)
+    //         return order;
+    //     return new Order();
+    // }
     
 }
