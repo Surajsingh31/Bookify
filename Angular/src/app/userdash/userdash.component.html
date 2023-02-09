@@ -5,20 +5,30 @@
   </head>
   <body>
     <header>
-      <h1>Bookify</h1>
+      <div class="logo">
+        <img src="assets\logo.jpg" alt="Book Store Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Add Book</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Books</a>
-      <a href="#">Cart</a>
-      <a href="#">Profile</a>
-    </nav>
     <main>
-      <h2>Your Dashboard</h2>
+      <!-- <h2>User Dashboard</h2>
       <div class="profile-info">
         <p>Name: </p>
         <p>Email: @gmail.com</p>
+        <p>Phone: 1234567890</p>
+        <p>Gender: </p>
+        <p>Type: </p>
         <p>Address: somewhere</p>
+        <p>Coins: </p>
       </div>
       <h3>Recent Orders</h3>
       <table>
@@ -26,7 +36,9 @@
           <tr>
             <th>Order Number</th>
             <th>Date</th>
+            <th>Book ID</th>
             <th>Total</th>
+            <th>Address</th>
             <th>Status</th>
           </tr>
         </thead>
@@ -34,16 +46,22 @@
           <tr>
             <td>#1</td>
             <td>Jan 1, 2023</td>
+            <td>#123</td>
             <td>&#8377;50.00</td>
+            <td>somewhere</td>
             <td>Shipped</td>
           </tr>
         </tbody>
       </table>
       <a href="#">View Order History</a>
-      <a href="#">Edit Profile Information</a>
+      <a href="#">Edit Profile Information</a> -->
+
+     <app-profilecard></app-profilecard> 
+      <app-profiletable></app-profiletable>
+
     </main>
     <footer>
-      <p>&copy; Bookify</p>
+      &copy; Bookify 2023
     </footer>
   </body>
 </html>
