@@ -20,15 +20,11 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ProfileComponent,
     NavbarComponent,
-    HomepageComponent
-  
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    HomepageComponent,
     LoginComponent,
     CartComponent,
     BookComponent
+  
   ],
   imports: [
     BrowserModule,
