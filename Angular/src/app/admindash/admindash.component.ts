@@ -6,15 +6,11 @@ declare var jQuery : any;
   styleUrls: ['./admindash.component.css']
 })
 export class AdmindashComponent implements OnInit {
-  ngOnInit(): void {
-
-
-      
+  ngOnInit(): void {      
   }
   edit(){
     console.log("abc");
     jQuery("#myModal").modal('show');
 
-  }
+  } 
 }
-

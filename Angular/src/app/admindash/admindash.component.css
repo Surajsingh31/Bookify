@@ -107,10 +107,13 @@ header nav a {
     
   }
 
+  .modal-content {
+    align-items: left;
+    align-self: left;
+  }
+
   #profile-photo {
     display: block;
-    margin: 0 auto;
-    text-align: left;
   }
   
   

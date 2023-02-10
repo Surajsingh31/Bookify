@@ -14,7 +14,6 @@ import { ProfiletableComponent } from './profiletable/profiletable.component';
 import { ModalboxComponent } from './modalbox/modalbox.component';
 import { NgModule } from '@angular/core';
 import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Test2Component } from './test2/test2.component';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
@@ -31,6 +30,8 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminmodalboxComponent } from './adminmodalbox/adminmodalbox.component';
+import { NgToastModule } from 'ng-angular-popup';
 
 
 
@@ -46,7 +47,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfilecardComponent,
     ProfiletableComponent,
     ModalboxComponent,
-    Test2Component,
+    AdminmodalboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,6 +70,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
+    NgToastModule
     
   ],
   providers: [],

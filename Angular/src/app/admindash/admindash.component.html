@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>Admin Dashboard</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
   
@@ -53,12 +53,37 @@
           </tbody>
         </table>
         <button type="button" class="btn btn-info btn-sm" (click)="edit()" align="center">Add Book</button>
-                              
-          
 
-
-
-                                                            
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                                                              
+             <!-- Modal content-->
+                 <div class="modal-content" >
+                                                                    <div class="edit-profile-container">
+                                                                        <form action="#">
+                                                                          <div class="form-group">
+                                                                          <label for="profile-photo">Book Photo:</label>
+                                                                            <input type="file" id="profile-photo" name="profile-photo">
+                                                                          </div>
+                                                                          <div class="form-group">
+                                                                            <label for="full-name">Name:</label>
+                                                                            <input type="text" id="full-name" name="full-name" value="">
+                                                                          </div>
+                                                                          <div class="form-group">
+                                                                            <label for="email">Price</label>
+                                                                            <input type="email" id="email" name="email" value="">
+                                                                          </div>
+                                                                          <div class="form-group">
+                                                                            <label for="phone">Quantity</label>
+                                                                            <input type="tel" id="phone" name="phone" value="">
+                                                                          </div>
+                                                                          <button type="submit" class="btn btn-danger" (click)="edit()">Add Book</button>
+                                                                        </form>
+                                                                      </div>
+                                                            </div></div>
+                                                          </div>
+                                                                                        
       
 
       <section id="manage-orders">
@@ -126,9 +151,7 @@
               <td>1234567890</td>
               <td>50</td>
               <td>
-                <button type="button" class="btn btn-link btn-sm btn-rounded">
-                  Edit
-                </button>
+                <app-adminmodalbox></app-adminmodalbox>
                 <button type="button" class="btn btn-link btn-sm btn-rounded">
                   Delete
                 </button>
@@ -160,13 +183,7 @@
               <td>12345</td>
               <td>10</td>
               <td>
-                <button
-                        type="button"
-                        class="btn btn-link btn-rounded btn-sm fw-bold"
-                        data-mdb-ripple-color="dark"
-                        >
-                  Edit
-                </button>
+                  <app-adminmodalbox></app-adminmodalbox>
                 <button
                         type="button"
                         class="btn btn-link btn-rounded btn-sm fw-bold"
@@ -187,35 +204,13 @@
 
   
   
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog modal-lg">
-                                                                  
-                 <!-- Modal content-->
-                     <div class="modal-content" >
-                                                                        <div class="edit-profile-container">
-                                                                            <form action="#">
-                                                                              <div class="form-group">
-                                                                              <label for="profile-photo">Book Photo:</label>
-                                                                                <input type="file" id="profile-photo" name="profile-photo">
-                                                                              </div>
-                                                                              <div class="form-group">
-                                                                                <label for="full-name">Name:</label>
-                                                                                <input type="text" id="full-name" name="full-name" value="">
-                                                                              </div>
-                                                                              <div class="form-group">
-                                                                                <label for="email">Price</label>
-                                                                                <input type="email" id="email" name="email" value="">
-                                                                              </div>
-                                                                              <div class="form-group">
-                                                                                <label for="phone">Quantity</label>
-                                                                                <input type="tel" id="phone" name="phone" value="">
-                                                                              </div>
-                                                                              <button type="submit" class="btn btn-danger" (click)="edit()">Add Book</button>
-                                                                            </form>
-                                                                          </div>
-                                                                </div></div>
-              </div>
+            
+
+
+
+
+
+
       </section>
     </main>
   </body>
