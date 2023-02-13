@@ -2,7 +2,6 @@ package com.model;
 
 import java.sql.Date;
 import java.util.List;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,8 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -41,6 +38,17 @@ public class Order {
     @ManyToOne
     @JoinColumn(name = "custId")
     private Customer customer;
+
+    public Order(){
+        super();
+    }
+
+    public Order(int orderId, Date orderDate, String address, double amount) {
+        this.orderId = orderId;
+        this.orderDate = orderDate;
+        this.address = address;
+        this.amount = amount;
+    }
 
     public int getOrderId() {
         return orderId;
@@ -80,6 +88,12 @@ public class Order {
 
     public void setBooks(List<Book> books) {
         this.books = books;
+    }
+
+    @Override
+    public String toString() {
+        return "Order [orderId=" + orderId + ", orderDate=" + orderDate + ", address=" + address + ", amount=" + amount
+                + ", books=" + books + ", customer=" + customer + "]";
     }
 
 }
