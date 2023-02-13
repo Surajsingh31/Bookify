@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(197, 239, 230, 0.676);
+}
+hr{
+    margin-top: 0px;
+}
+p{
+    margin-bottom: 0px;
+    text-align: end;
+    margin-right: 10px;
+}
+#div1{
+    background-color: rgba(232, 236, 237, 0.731);
+    backface-visibility: hidden;
+    border: 1px black solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    
+}
+h2{
+    margin:2%;
+    color: rgba(8, 8, 8, 0.694);
+}
+#my{
+    background-color: rgba(232, 236, 237, 0.731);
+    
+    font-size: xx-large;
+    font-style: Sans-serif;
+    color: black;
+    text-align: center;
+}
+p{
+    font-size: large;
+}
+table{
+     background :#f8f9fa;;
+}
+button{
+    background-color: rgb(237, 110, 161);
+
+}

@@ -26,28 +26,36 @@ public class BookDAO {
         return bookRepository.getBooksByGenre(genre);
     }
     public List<Book> getBooksByPrice(String genre){
-        if(genre == "All"){
+        if(genre.equals("All")){
             return bookRepository.getAllBooksByPriceAsc();
         }
+        else{
         return bookRepository.getBooksByPrice(genre);
+        }
     }
     public List<Book> getBooksByPriceHigh(String genre){
-        if(genre == "All"){
+        if(genre.equals("All")){
             return bookRepository.getAllBooksByPriceDesc();
         }
+        else{
         return bookRepository.getBooksByPriceHigh(genre);
+        }
     }
     public List<Book> getBooksByAlphabet(String genre){
-        if(genre == "All"){
+        if(genre.equals("All")){
             return bookRepository.getAllBooksByAlphabetAsc();
         }
+        else{
         return bookRepository.getBooksByAlphabet(genre);
     }
+    }
     public List<Book> getBooksByAlphabetDesc(String genre){
-        if(genre == "All"){
-            return bookRepository.getAllBooksByPriceDesc();
+        if(genre.equals("All")){
+            return bookRepository.getAllBooksByAlphabetDesc();
         }
+        else{
         return bookRepository.getBooksByAlphabetDesc(genre);
+        }
     }
 
     public Book getBookByName(String bookName){

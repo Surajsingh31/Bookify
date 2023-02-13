@@ -42,6 +42,11 @@ public class CustomerController{
         return new Customer(0,"Student Not Found","","","","","","",000000,"","","",0);
     }
 
+	@GetMapping("/getCustomer/{email}/{password}")
+	public Customer getCustomer(@PathVariable("email") String email, @PathVariable("password") String password) {
+		return custDAO.getCustomer(email, password);
+	}
+
     @PostMapping("/registerCustomer")
 	public String registerCustomer(@RequestBody Customer cust) {
 

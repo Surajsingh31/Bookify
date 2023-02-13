@@ -22,8 +22,7 @@ export class BookifyService {
   }
 
   addToCart(book: any) {
-    // this.cartItems.push(book);
-    this.productToBeAdded.next(book);
+      this.productToBeAdded.next(book);
   }
   getCartStatus(): any {
     return this.productToBeAdded.asObservable();
@@ -73,5 +72,16 @@ export class BookifyService {
     }
     return this.httpClient.get("/getBooksByAlphabetDesc/" + genre);
   }
-  
+
+  getAllCustomers(){
+    return this.httpClient.get("/getAllCustomers");
+  }
+  registerCustomer(customer:any){
+    return this.httpClient.post("/registerCustomer",customer);
+  }
+
+  getCustomer(customer: any) {
+    return this.httpClient.get("/getCustomer/" + customer.email + "/" + customer.password).toPromise();
+  }
+
 }

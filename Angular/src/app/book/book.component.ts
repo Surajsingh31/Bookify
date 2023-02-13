@@ -22,7 +22,9 @@ export class BookComponent implements OnInit{
     price: '',
     publications : '',
     quantity:'',
-    type:''}
+    type:'',
+    booksInCart:''
+    }
   }
   ngOnInit(): void {
 
@@ -75,7 +77,7 @@ export class BookComponent implements OnInit{
   }
   addToCart(book:any):any{
 
-    console.log(book);
+    //console.log(book);
     this.service.addToCart(book);
 
   }

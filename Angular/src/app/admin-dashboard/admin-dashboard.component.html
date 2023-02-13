@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
+  
+  </head>
+
+  <main>
+      
+    <section id="manage-books">
+      <h2>Manage Books</h2>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Book ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>name</td>
+            <td>21</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-info btn-sm" (click)="edit()" align="center">Add Book</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-lg">
+                                                            
+           <!-- Modal content-->
+               <div class="modal-content" >
+                                                                  <div class="edit-profile-container">
+                                                                      <form action="#">
+                                                                        <div class="form-group">
+                                                                        <label for="profile-photo">Book Photo:</label>
+                                                                          <input type="file" id="profile-photo" name="profile-photo">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                          <label for="full-name">Name:</label>
+                                                                          <input type="text" id="full-name" name="full-name" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                          <label for="email">Price</label>
+                                                                          <input type="email" id="email" name="email" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                          <label for="phone">Quantity</label>
+                                                                          <input type="tel" id="phone" name="phone" value="">
+                                                                        </div>
+                                                                        <button type="submit" class="btn btn-danger" (click)="edit()">Add Book</button>
+                                                                      </form>
+                                                                    </div>
+                                                          </div></div>
+                                                        </div>
+                                                                                      
+    
+
+    <section id="manage-orders">
+      <h2>Manage Orders</h2>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Order No</th>
+            <th scope="col">Book ID</th>
+            <th scope="col">Price</th>
+            <th scope="col">Address</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="manage-customers">
+      <h2>Manage Customers</h2>
+      <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Status</th>
+            <th>Phone</th>
+            <th>Coins</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                    />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1"></p>
+              <p class="text-muted mb-0"></p>
+            </td>
+            <td>
+              <span class="badge badge-success rounded-pill d-inline">Male</span>
+            </td>
+            <td>Premium</td>
+            <td>1234567890</td>
+            <td>50</td>
+            <td>
+              <app-admin-modal-box></app-admin-modal-box>
+              <button type="button" class="btn btn-link btn-sm btn-rounded">
+                Delete
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                    src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                    class="rounded-circle"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Kate Hunington</p>
+                  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1"></p>
+              <p class="text-muted mb-0"></p>
+            </td>
+            <td>
+              <span class="badge badge-warning rounded-pill d-inline">Female</span>
+            </td>
+            <td>Normal</td>
+            <td>12345</td>
+            <td>10</td>
+            <td> 
+                <app-admin-modal-box></app-admin-modal-box>
+              <button
+                      type="button"
+                      class="btn btn-link btn-rounded btn-sm fw-bold"
+                      data-mdb-ripple-color="dark"
+                      >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>

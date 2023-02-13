@@ -24,6 +24,10 @@ public class CustomerDAO {
         return custRepository.getByName(customerName);
     }
 
+    public Customer getCustomer(String email, String password) {		
+		return custRepository.getCustomer(email, password);
+	}
+
     public Customer registerCustomer(Customer cust){
         return custRepository.save(cust);
     }

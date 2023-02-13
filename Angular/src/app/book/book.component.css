@@ -1,12 +1,8 @@
-body{
-     background-color: rgb(249, 238, 236);
-    /* background-image: url("https://media.istockphoto.com/id/611177968/photo/modern-interior-room-with-beautiful-furniture.jpg?s=612x612&w=0&k=20&c=gOqtglR3PCU6bqNuPUTkWjZH7fYhHT3A3Liv7ydx9sw="); */
-}
+
 .row{
     border-radius: 50%;
     margin-top: 5%;
     
-
 }
 h1{
    
@@ -16,7 +12,7 @@ h1{
 }
 .card{
     background-color: rgb(251, 245, 240);
-    border-radius: 3rem;
+    border-radius: 2rem;
 }
 .card-body{
     margin-top: -35px;

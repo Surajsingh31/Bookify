@@ -12,6 +12,17 @@ import { CartComponent } from './cart/cart.component';
 import { BookComponent } from './book/book.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { EBooksComponent } from './e-books/e-books.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminModalBoxComponent } from './admin-modal-box/admin-modal-box.component';
+import { UserDashBoardComponent } from './user-dash-board/user-dash-board.component';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
+import { ProfileTableComponent } from './profile-table/profile-table.component';
+import { ModalBoxComponent } from './modal-box/modal-box.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { CharityComponent } from './charity/charity.component';
 
 
 @NgModule({
@@ -23,7 +34,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomepageComponent,
     LoginComponent,
     CartComponent,
-    BookComponent
+    BookComponent,
+    RegisterComponent,
+    EBooksComponent,
+    FooterComponent,
+    AdminDashboardComponent,
+    AdminModalBoxComponent,
+    UserDashBoardComponent,
+    ProfileCardComponent,
+    ProfileTableComponent,
+    ModalBoxComponent,
+    WishlistComponent,
+    CharityComponent
   
   ],
   imports: [

@@ -7,7 +7,8 @@ hr{
 p{
     margin-bottom: 0px;
     text-align: end;
-    margin-right: 10px;
+    margin-right: 45px;
+    font-size: large;
 }
 #div1{
     background-color: white;
@@ -16,8 +17,16 @@ p{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+    
 }
 h2{
     margin:2%;
     color: rgba(7, 7, 7, 0.694);
+}
+#my{
+    background-color: rgb(252, 62, 5);
+    font-size: xx-large;
+    font-style: italic;
+    color: white;
+    text-align: center;
 }

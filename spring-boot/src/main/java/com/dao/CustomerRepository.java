@@ -10,5 +10,8 @@ public interface CustomerRepository extends JpaRepository<Customer,Integer> {
     
 	@Query("from Customer c where c.custName = :custName")
 	Customer getByName(@Param("custName") String custName);
+
+	@Query("from Customer c where c.email = :email and c.password = :password")
+	Customer getCustomer(@Param("email") String email, @Param("password") String password);
     
 } 

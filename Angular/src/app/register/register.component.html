@@ -1,0 +1,165 @@
+<section class="h-100 bg-dark">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                  alt="Sample photo" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase" style="text-align: center;"> Register</h3>
+                 <form [formGroup]="registrationForm" (ngSubmit)="registerCustomer()">
+  
+                
+                  <div class="row">
+                    <div class="col-md-12 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1m" formControlName="custName" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1m">Full name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1n" formControlName="email" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1n">Email</label>
+                      </div>
+                    </div>
+                   
+                    
+                  </div>
+                 
+  
+                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+  
+                    <h6 class="mb-0 me-4">Gender: </h6>
+  
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                      formControlName="gender"
+                        value="female" />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="gender" id="maleGender" formControlName="gender"
+                        value="male" />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="radio" name="gender" id="otherGender" formControlName="gender"
+                        value="other" />
+                      <label class="form-check-label" for="otherGender">Others</label>
+                    </div>
+  
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-md-10 mb-4">
+                      <div class="form-outline">
+                        <select  
+          #country
+          name="country"
+          id="country"
+          (change)="onCountryChange($event)"
+        >
+          <option [value]="null">-- Select Your Country --</option>
+          <option *ngFor="let country of countries" [value]="country | json">
+         {{ country.name }}
+          </option>
+        </select>
+                      </div>
+                    </div>
+                   
+                  </div>
+  
+                  
+  
+                  
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+  
+                      <select 
+          *ngIf="states"
+          #state
+          name="state"
+          id="state"
+          (change)="onStateChange($event)"
+          class="select"
+        >
+          <option [value]="null">-- Select Your State --</option>
+          <option *ngFor="let state of states" [value]="state | json">
+            {{ state.name }}
+          </option>
+        </select>
+  
+                    </div>
+                    <div class="col-md-6 mb-4">
+  
+                      <select 
+          *ngIf="cities"
+          #city
+          name="city"
+          id="city"
+          (change)="onCityChange($event)"
+          class="select"
+        >
+          <option [value]="null">-- Select Your City --</option>
+          <option *ngFor="let city of cities" [value]="city | json">
+            {{ city.name }}form3Example90
+          </option>
+        </select>
+                    </div>
+                  </div>
+  
+                
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="pin" formControlName="pincode" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example90">Pincode</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="address" formControlName="address" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example90">Address</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example90" formControlName="phoneNumber" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example90">PhoneNumber</label>
+                  </div>
+  
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="pswd" name="password" formControlName="password" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example97">Password</label>
+                  </div>
+  
+                  <div form-outline mb-4>
+                    <select class="select" name="type" formControlName="type" id="type">
+                      <option selected>Select Role</option>
+                      <option value="Premium">Premium</option>
+                      <option value="Regular" >Regular</option>
+                    
+                    </select>
+                  </div>
+                  <div class="d-flex justify-content-end pt-3">
+                    <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a routerLink="/login"
+                      class="link-danger">Login</a></p>
+                    <button type="button" class="btn btn-light btn-lg" (click)="resetForm()">Reset all</button>
+                    <button type="button" class="btn btn-warning btn-lg ms-2" (click)=" registerCustomer()">Register</button>
+                  </div>
+                </form>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
