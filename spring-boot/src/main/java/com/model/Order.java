@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -32,12 +33,13 @@ public class Order {
     @JsonIgnore
     @ManyToMany
     @JoinColumn(name="bookId")
-    private List<Book> books;
+    Book book;
 
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "custId")
-    private Customer customer;
+    Customer customer;
+    
 
     public Order(){
         super();
@@ -82,18 +84,18 @@ public class Order {
         this.amount = amount;
     }
 
-    public List<Book> getBooks() {
-        return books;
+    public Book getBooks() {
+        return book;
     }
 
-    public void setBooks(List<Book> books) {
-        this.books = books;
+    public void setBooks(Book books) {
+        this.book = books;
     }
 
     @Override
     public String toString() {
         return "Order [orderId=" + orderId + ", orderDate=" + orderDate + ", address=" + address + ", amount=" + amount
-                + ", books=" + books + ", customer=" + customer + "]";
+                + ", books=" + book + ", customer=" + customer + "]";
     }
 
 }

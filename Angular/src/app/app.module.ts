@@ -11,7 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { BookComponent } from './book/book.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,21 +21,19 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ProfileComponent,
     NavbarComponent,
-    HomepageComponent
-  
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    HomepageComponent,
     LoginComponent,
     CartComponent,
     BookComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

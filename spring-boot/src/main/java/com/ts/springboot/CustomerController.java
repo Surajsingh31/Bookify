@@ -30,7 +30,7 @@ public class CustomerController{
 		if(cust != null){
 			return cust;
 		}
-		return new Customer(0,"Student Not Found","","","","","","",000000,"","","",0,"");
+		return new Customer(0,"Student Not Found","","","","","","",000000,"","","",0);
 	}
 
     @GetMapping("/getCustomerByName/{custName}")
@@ -39,7 +39,7 @@ public class CustomerController{
         if(cust != null)
             return cust;
 
-        return new Customer(0,"Student Not Found","","","","","","",000000,"","","",0,"");
+        return new Customer(0,"Student Not Found","","","","","","",000000,"","","",0);
     }
 
     @PostMapping("/registerCustomer")

@@ -30,8 +30,12 @@ public class OrderDAO {
         return orderRepository.findOrdersByAmount(amount);
     }
 
+
     public Order findOrderByOrderId(int orderId) {
         return orderRepository.findOrderByOrderId(orderId);
     }
-    
+
+    public void deleteOrder(int orderId){
+        orderRepository.deleteById(orderId);
+    }
 }

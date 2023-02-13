@@ -44,7 +44,7 @@ public class Customer {
 
 
     public Customer(int custId, String custName, String email, String gender, String phoneNumber, String password,
-            String type, String address, int pincode, String city, String state, String country, int coins,String status) {
+            String type, String address, int pincode, String city, String state, String country, int coins) {
         this.custId = custId;
         this.custName = custName;
         this.email = email;
@@ -256,10 +256,6 @@ public class Customer {
                 + ", pincode=" + pincode + ", city=" + city + ", state=" + state + ", country=" + country + ", coins="
                 + coins + "]";
     }
-
-    
-   
-
 
 
     
