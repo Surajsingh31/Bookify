@@ -25,9 +25,9 @@ public class OrderDAO {
         return orderRepository.save(order);
     }
 
-    public Order getOrderByDate(Date date){
-        return orderRepository.findByDateOrder(date).orElse(null);
-    }
+    // public Order getOrderByDate(Date date){
+    //     return orderRepository.findByDateOrder(date).orElse(null);
+    // }
 
     public void deleteOrder(int orderId){
         orderRepository.deleteById(orderId);

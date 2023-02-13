@@ -22,7 +22,6 @@ public class Customer {
     private String state;
     private String country;
     private int coins;
-    private String status;
 
 
     public Customer() {
