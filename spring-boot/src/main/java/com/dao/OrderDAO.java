@@ -2,6 +2,7 @@ package com.dao;
 
 import java.sql.Date;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,27 +10,28 @@ import com.model.Order;
 
 @Service
 public class OrderDAO {
-    
+
     @Autowired
-    OrderRepository orderRepository;
+    private OrderRepository orderRepository;
 
-    public List<Order> getAllOrders(){
+    public List<Order> findAllOrders() {
         return orderRepository.findAll();
+      }
+
+    public List<Order> findOrdersByOrderDate(Date orderDate) {
+        return orderRepository.findOrdersByOrderDate(orderDate);
     }
 
-    public  Order getOrder(int orderId){
-        return orderRepository.findById(orderId).orElse(null);
+    public List<Order> findOrdersByAddress(String address) {
+        return orderRepository.findOrdersByAddress(address);
     }
 
-    public Order registerOrder(Order order){
-        return orderRepository.save(order);
+    public List<Order> findOrdersByAmount(double amount) {
+        return orderRepository.findOrdersByAmount(amount);
     }
 
-    public Order getOrderByDate(Date date){
-        return orderRepository.findByDateOrder(date).orElse(null);
+    public Order findOrderByOrderId(int orderId) {
+        return orderRepository.findOrderByOrderId(orderId);
     }
-
-    public void deleteOrder(int orderId){
-        orderRepository.deleteById(orderId);
-    }
+    
 }

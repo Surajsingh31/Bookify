@@ -1,1 +1,749 @@
-<p>homepage works!</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="homepage.component.css">
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"> </script>
+    <script >   window.onscroll = () => {
+            searchForm.classList.remove('active');
+        }
+        window.onload = () => {
+            fadeOut();
+        }
+
+        function loader() {
+            document.querySelector('.loader-container').classList.add('active');
+        }
+
+        function fadeOut() {
+            setTimeout(loader, 4000);
+        }
+
+        var swiper = new Swiper(".books-slider", {
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 9500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".featured-slider", {
+            spaceBetween: 10,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 9500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                450: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".arrivals-slider", {
+            spaceBetween: 10,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 9500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".reviews-slider", {
+            spaceBetween: 10,
+            grabCursor: true,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 9500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script> -->
+    
+</head>
+
+<body>
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>upto 60% off</h3>
+                <p>Bookify is an innovative online bookstore that offers a vast selection of books to its customers.
+                    Whether you are looking for bestsellers, classic literature, or niche titles, Bookify has got you
+                    covered. With its user-friendly interface, easy navigation, and a variety of filtering options,
+                    finding the perfect book has never been easier. So why not dive into the world of books with Bookify
+                    today?</p>
+                <a href="#" class="btn">Explore Collections</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="https://m.media-amazon.com/images/I/713ygCSExlL.jpg"
+                            alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51RNGQIJgdL.jpg"
+                            alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71XvcOz-HlL.jpg"
+                            alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51u8ZRDCVoL.jpg"
+                            alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81zXPxmuFvL.jpg"
+                            alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61Ks6ClPh4L.jpg"
+                            alt=""></a>
+                </div>
+                <img src="assets/stand.png" class="stand" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-shipping-fast"></i>
+            <div class="content">
+                <h3>free shipping</h3>
+                <p>order over ₹1000</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>secure payment</h3>
+                <p>100% secure payment</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>easy returns</h3>
+                <p>10 days returns</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>24*7 support</h3>
+                <p>call us anytime</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>featured books</span> </h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="C:\Users\Pratyush\Downloads\books webstie\image\atomichabits.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Atomic Habits</h3>
+                        <div class="price">₹233 <span>₹450</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/566dc8f15a5668242bb9deab/1569430830078-P76A59H8K6AC4UA1FHT1/unnamed.jpg?format=1000w"
+                            alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Never Split The Difference</h3>
+                        <div class="price">₹300 <span>₹500</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://i0.wp.com/www.game-changer.net/wp-content/uploads/2022/04/think-again-adam-grant.jpg?fit=800%2C800"
+                            alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Think Again</h3>
+                        <div class="price">₹399 <span>₹799</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://www.julienfortuitagency.com/wp-content/uploads/2020/07/THINK-GROW-RICH-Napoleon-Hill.jpg"
+                            alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Think And Grow Rich</h3>
+                        <div class="price">₹399 <span>₹599</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://kopithoughts.com/wp-content/uploads/2020/10/TheLeanStartup_top-scaled.jpg"
+                            alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Lean StartUp</h3>
+                        <div class="price">₹339 <span>₹499</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/4108V6JJ+jL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Power of Now</h3>
+                        <div class="price">₹239 <span>₹349</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://1.bp.blogspot.com/-cjLgfMm8c6U/X-nczrYM-eI/AAAAAAAAE3c/mP4kKAlJfMkYP9vtNpYD_F3oG3Td3MG4wCLcBGAsYHQ/s720/mans-search-for-meaning-by-viktor-frankl.png"
+                            alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Man's Search For Meaning</h3>
+                        <div class="price">₹349 <span>₹449</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/91PfUj8RBrL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Four Agreements</h3>
+                        <div class="price">₹249 <span>₹349 </span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/71W17QhPvyL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Art of Possibility</h3>
+                        <div class="price">₹249 <span>₹349</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/41wpODmcteL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Charisma Myth</h3>
+                        <div class="price">₹349 <span>₹549</span></div>
+                        <!-- <a href="#" class="btn">add to cart</a> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <section class="newsletter">
+
+        <form action="">
+            <h3>subscribe to our newsletter</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="submit" value="subscribe" class="btn">
+        </form>
+
+    </section>
+
+    <section class="arrivals" id="arrivals">
+
+        <h1 class="heading"> <span>Fresh additions</span> </h1>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://kbimages1-a.akamaihd.net/47abd086-71d1-47db-b2d4-9db1d3feedc2/1200/1200/False/fire-and-blood-the-inspiration-for-hbo-s-house-of-the-dragon-a-song-of-ice-and-fire-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Fire And Blood</h3>
+                        <div class="price">₹699 <span> ₹899</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/81q1AybR-ZL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>A Song Of Ice and Fire</h3>
+                        <div class="price">₹649 <span> ₹799</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://images.ctfassets.net/usf1vwtuqyxm/35KbpLHvQvQtBBKs0vKErL/43985bc9e5bea863ccf9cc9561b62827/English_Harry_Potter_6_Epub_9781781100257.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Harry Potter & The Half-Blood Prince</h3>
+                        <div class="price">₹349 <span> ₹499</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/51jJ0ka26AL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Do Epic Shit</h3>
+                        <div class="price">₹189 <span> ₹249</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/81gepf1eMqL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>To Kill A MockingBird</h3>
+                        <div class="price">₹159 <span> ₹200</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/71-ptCTNgvL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Code Breaker</h3>
+                        <div class="price">₹179 <span> ₹249</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/91rTksdjZqL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Sanatorium</h3>
+                        <div class="price">₹749 <span>₹899</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/53598fa9e4b0b733eebaf82b/1594394734349-NBOMW4J5MK4OO1TWC07K/MG_MG_lifestyle-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Mexican Gothic</h3>
+                        <div class="price">₹399 <span>₹600</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/91nRWMKV9CL.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Vanishing Half</h3>
+                        <div class="price">₹1599 <span>₹2099</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/711cXHTd3+L.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Klara and the Sun</h3>
+                        <div class="price">₹359 <span>₹599</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="deal">
+
+        <div class="content">
+            <h3>Donate Books</h3>
+            
+            <p>Attention book lovers! Do you have any gently used books collecting dust on your shelves? Give them a second life by donating them to our local book charity. Your donations will go towards spreading the joy of reading and providing access to books for those in need. 
+                Whether it's children in underserved communities or families in need, your book donations can make a real difference in someone's life. 
+                Together, we can make a positive impact through the power of books.<br>
+                <a href="https://www.booksforall.org.in/">#BookCharity  #SpreadTheLoveOfReading  #GiveBack</a></p>
+            <a href="#" class="btn">Donate</a>
+        </div>
+
+        <div class="image">
+            <img src="https://png.pngtree.com/template/20220612/ourmid/pngtree-donation-box-comic-book-image_1830655.jpg" alt="">
+        </div>
+
+    </section>
+
+   
+
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"> <span>Customer reviews</span> </h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="" alt="">
+                    <h3>Suraj Singh Rajput</h3>
+                    <p>This is my first ever experience with any online book store but I have to say, this is the best site out there. From 
+                        interactive UI to easy payment modes, everything was so good and clean.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="" alt="">
+                    <h3>Kannan Hari Babu</h3>
+                    <p>I absolutely love shopping at Bookify! Their online selection is unbeatable, with a wide range of books for all genres. The website is easy to navigate and their delivery is always fast and efficient. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="" alt="">
+                    <h3>Shivam Sharma</h3>
+                    <p>Bookify has been my go-to bookstore for all my reading needs. Their prices are reasonable and they always have the latest releases in stock. Thanks, Bookify.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="" alt="">
+                    <h3>Avasula Santhosh Kumar</h3>
+                    <p>As a frequent online shopper, I can say that Bookify has exceeded my expectations. Their customer service is top-notch, responding quickly to any questions or concerns I have. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="" alt="">
+                    <h3>Piyush Gupta</h3>
+                    <p>Bookify has a vast collection of books and the prices are very competitive. The process of ordering and delivering the books is seamless and they always arrive on time.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="" alt="">
+                    <h3>Pratyush Agrawal</h3>
+                    <p>I recently started ordering books from Bookify and I am beyond impressed. The quality of their products is excellent and their packaging is great, ensuring that my books arrive in perfect condition.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="deal">
+
+        <div class="content">
+            <h3>Request Books</h3>
+            
+            <p>We are working towards the goal of global literacy and free education. And 
+                hence we give out the books for free. If you are in need of a book or know someone who desperately needs it, we are here to help.
+                Our team is here to assist with any questions or concerns you may have and help you find the perfect book. Thank you for considering making a request and for your support in spreading the love of reading.
+            </p>
+            <a href="#" class="btn">Request</a>
+        </div>
+
+        <div class="image">
+            <img src="https://img.freepik.com/premium-vector/book-donation-cardboard-box-full-different-textbooks_189033-1812.jpg" alt="">
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> India </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> books </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> e-books </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Donate </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Request </a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Dashboard </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Profile </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Help & Support </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +91-9554245958 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +91-7905054457 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> bookify@gmail.com </a>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/No_colonies_blank_world_map.png/1200px-No_colonies_blank_world_map.png" class="map" alt="">
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <!-- <a href="#" class="fab fa-pinterest"></a> -->
+        </div>
+
+    </section>
+
+    <!-- <div class="loader-container">
+        <img src="https://cdn.dribbble.com/users/1691845/screenshots/4849940/knowldgehook.gif" alt="">
+    </div> -->
+
+</body>
+

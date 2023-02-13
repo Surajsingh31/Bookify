@@ -1,49 +1,46 @@
 package com.model;
 
+import java.sql.Date;
+import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.persistence.Column;
-import java.sql.Date;
 
 @Entity
 public class Order {
 
-    @Id@GeneratedValue
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "order_id")
     private int orderId;
 
-    @Column(name="orderName",length=30)
-    private String orderName;
+    @Column(name = "order_date")
+    private Date orderDate;
 
-    private double amount;
-    private Date date;
+    @Column(name = "address")
     private String address;
+
+    @Column(name = "amount")
+    private double amount;
+
+    @JsonIgnore
+    @ManyToMany
+    @JoinColumn(name="bookId")
+    private List<Book> books;
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name="bookId")
-    Book book;
-
-    @JsonIgnore
-    @JoinColumn(name="CustId")
-    Customer cust;
-
-    public Order(){
-
-    }
-
-    public Order(int orderId, String orderName, double amount, Date date, String address) {
-        this.orderId = orderId;
-        this.orderName = orderName;
-        this.amount = amount;
-        this.date = date;
-        this.address = address;
-    }
+    @JoinColumn(name = "custId")
+    private Customer customer;
 
     public int getOrderId() {
         return orderId;
@@ -53,28 +50,12 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public String getOrderName() {
-        return orderName;
+    public Date getOrderDate() {
+        return orderDate;
     }
 
-    public void setOrderName(String orderName) {
-        this.orderName = orderName;
-    }
-
-    public double getAmount() {
-        return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
     }
 
     public String getAddress() {
@@ -85,30 +66,20 @@ public class Order {
         this.address = address;
     }
 
-    public Book getBook() {
-        return book;
+    public double getAmount() {
+        return amount;
     }
 
-    public void setBook(Book book) {
-        this.book = book;
+    public void setAmount(double amount) {
+        this.amount = amount;
     }
 
-    public Customer getCust() {
-        return cust;
+    public List<Book> getBooks() {
+        return books;
     }
 
-    public void setCust(Customer cust) {
-        this.cust = cust;
-    }
-
-    @Override
-    public String toString() {
-        return "Order [orderId=" + orderId + ", orderName=" + orderName + ", amount=" + amount + ", date=" + date
-                + ", address=" + address + ", book=" + book + ", cust=" + cust + "]";
-    }
-
-    public Order orElse(Object object) {
-        return null;
+    public void setBooks(List<Book> books) {
+        this.books = books;
     }
 
 }

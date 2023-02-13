@@ -1,21 +1,30 @@
 package com.dao;
 
 import java.sql.Date;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import com.model.Order;
 
-public interface OrderRepository extends JpaRepository<Order,Integer> {
+@Repository
+public interface OrderRepository extends JpaRepository<Order, Integer> {
+
+	@Query("SELECT o FROM Order o WHERE o.orderDate = :orderDate")
+	List<Order> findOrdersByOrderDate(Date orderDate);
+
+	@Query("SELECT o FROM Order o WHERE o.address = :address")
+	List<Order> findOrdersByAddress(String address);
+
+	@Query("SELECT o FROM Order o WHERE o.amount = :amount")
+	List<Order> findOrdersByAmount(double amount);
+
+	@Query("SELECT o FROM Order o WHERE o.orderId = :orderId")
+	Order findOrderByOrderId(int orderId);
+
+}
 
     
-	@Query("from Order o where o.orderName = :orderName")
-	Order findByName(@Param("orderName") String orderName);
-
-	@Query("from Order o where o.orderDate = :orderDate")
-	Order findByDateOrder(@Param("orderDate") Date orderDate);
-    
-} 
 

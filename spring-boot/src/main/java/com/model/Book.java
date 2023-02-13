@@ -1,14 +1,24 @@
 package com.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Book {
 
     @Id@GeneratedValue
     private int bookId;
+
     private String bookName;
     private double price;
     private String genre;
@@ -18,6 +28,15 @@ public class Book {
     private int quantity;
     private String authors;
     private String publications;
+
+    @JsonIgnore
+    @ManyToMany(mappedBy = "order")
+    List<Order> order = new ArrayList<Order>();
+
+    // @JsonIgnore
+    // @ManyToMany(mappedBy = "book")
+    // List<Customer> cust = new ArrayList<Customer>();
+
 
     public Book() {
         super();

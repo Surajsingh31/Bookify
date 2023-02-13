@@ -19,27 +19,28 @@ public class OrderController {
     @Autowired
     OrderDAO orderDAO;
 
-    @RequestMapping("/showOrders")
+    @RequestMapping("/showAllOrders")
     public List<Order> showAllOrders(){
-        List<Order> orderList=orderDAO.getAllOrders();
+        List<Order> orderList=orderDAO.findAllOrders();
         return orderList;
     }
 
     @GetMapping("/getOrderById/{orderId}")
     public Order getOrderById(@PathVariable("orderId") int orderId){
-        Order order = orderDAO.getOrder(orderId);
+        Order order = orderDAO.findOrderByOrderId(orderId);
         if(order!=null)
             return order;
-        
+
         return new Order();
     }
 
     @RequestMapping("/getOrderByDate/{orderDate}")
-    public Order getOrderByDate(@PathVariable("orderDate") Date orderDate){
-        Order order=orderDAO.getOrderByDate(orderDate);
+    public List<Order> getOrderByDate(@PathVariable("orderDate") Date orderDate){
+        List<Order> order=orderDAO.findOrdersByOrderDate(orderDate);
         if(order!=null)
             return order;
-        return new Order();
+            
+        return (List<Order>) new Order();
     }
     
 }

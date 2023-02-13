@@ -1,8 +1,14 @@
 package com.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Customer {
@@ -22,7 +28,15 @@ public class Customer {
     private String state;
     private String country;
     private int coins;
-    private String status;
+    
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "order")
+    private List<Order> order;
+
+    // @JsonIgnore
+    // @ManyToMany(mappedBy = "book")
+    // private List<Book> book;
 
 
     public Customer() {
@@ -31,7 +45,7 @@ public class Customer {
 
 
     public Customer(int custId, String custName, String email, String gender, String phoneNumber, String password,
-            String type, String address, int pincode, String city, String state, String country, int coins) {
+            String type, String address, int pincode, String city, String state, String country, int coins,String status) {
         this.custId = custId;
         this.custName = custName;
         this.email = email;
@@ -45,6 +59,7 @@ public class Customer {
         this.state = state;
         this.country = country;
         this.coins = coins;
+        
         
     }
 
@@ -232,7 +247,18 @@ public class Customer {
         this.coins = coins;
     }
 
+   
 
+
+    @Override
+    public String toString() {
+        return "Customer [custId=" + custId + ", custName=" + custName + ", email=" + email + ", gender=" + gender
+                + ", phoneNumber=" + phoneNumber + ", password=" + password + ", type=" + type + ", address=" + address
+                + ", pincode=" + pincode + ", city=" + city + ", state=" + state + ", country=" + country + ", coins="
+                + coins + "]";
+    }
+
+    
    
 
 
