@@ -23,6 +23,8 @@ import { ProfileTableComponent } from './profile-table/profile-table.component';
 import { ModalBoxComponent } from './modal-box/modal-box.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { CharityComponent } from './charity/charity.component';
+import { PaymentComponent } from './payment/payment.component';
+import { DonateComponent } from './donate/donate.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import { CharityComponent } from './charity/charity.component';
     ProfileTableComponent,
     ModalBoxComponent,
     WishlistComponent,
-    CharityComponent
+    CharityComponent,
+    PaymentComponent,
+    DonateComponent
   
   ],
   imports: [

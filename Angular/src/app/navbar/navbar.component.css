@@ -1,0 +1,23 @@
+
+.navbar-nav {
+    font-size: 1.6em;
+  }
+
+#searchInput {
+    height: 40px;
+    font-size: 1.2em;
+  }
+
+.search-form {
+width: 0;
+transition: all 0.5s ease-in-out;
+overflow: hidden;
+}
+
+.search-form.expanded {
+width: 300px;
+}
+
+.searchBtn{
+    size: 5px;
+}

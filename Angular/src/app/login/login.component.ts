@@ -51,9 +51,15 @@ export class LoginComponent implements OnInit {
   await this.Service.getCustomer(this.loginForm.value).then((data: any) => {this.customer = data; console.log(data);});
 
   if (this.customer != null) {
+    if(this.customer.email === "admin@gmail.com" && this.customer.password === "admin" ){
     alert('Successfully LoggedIn...');
     this.Service.setUserLoggedIn();
     this.router.navigate(['admin']);
+  }
+  else{
+    this.Service.setUserLoggedIn();
+    this.router.navigate(['user']);
+  }
   } else {
     alert('Invalid Credentials!!!');
     this.router.navigate(['login']);

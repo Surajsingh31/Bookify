@@ -26,14 +26,15 @@ export class CartComponent implements OnInit {
 
   }
 
-  payment(amount:any){
+ payment(amount:any){
     this.stripePaymentGateway();
     const strikeCheckout = (<any>window).StripeCheckout.configure({
       key: 'pk_test_51MZqTMSDktozLZ3rQ4AOBIVLwO0vrxYz5QSEUt3XnZyqcYag7cXpvyBreqvWXuyGZCKLqYvYoKEyzr7KMR1vzs0E00VWlq6MfF',
       locale: 'auto',
       token: function (stripeToken: any) {
         console.log(stripeToken)
-        // alert('Stripe token generated!');
+         alert('Payment Successfull');
+
       }
     });
   
@@ -44,7 +45,7 @@ export class CartComponent implements OnInit {
     });
   }
   
-  stripePaymentGateway() {
+    stripePaymentGateway() {
     if(!window.document.getElementById('stripe-script')) {
       const scr = window.document.createElement("script");
       scr.id = "stripe-script";
@@ -58,13 +59,18 @@ export class CartComponent implements OnInit {
           token: function (token: any) {
             console.log(token)
             alert('Payment via stripe successfull!');
+            // this.router.navigate(['user']);
           }
         });
       }
         
       window.document.body.appendChild(scr);
+
+
+      //  await this.router.navigate(['user']);
     }
   }
+
 
   deleteFromCart(bookId:any){
 

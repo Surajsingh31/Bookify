@@ -81,6 +81,9 @@ export class BookComponent implements OnInit{
     this.service.addToCart(book);
 
   }
+  addToWishList(book:any){
+    this.service.addToWishList(book);
+  }
 
 
 }

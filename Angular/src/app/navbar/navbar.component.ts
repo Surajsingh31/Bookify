@@ -12,6 +12,10 @@ export class NavbarComponent implements OnInit{
   showSearchInput = false;
   loginStatus:any;
   cartItems:any;
+  book:any;
+  wishList:any;
+  isExpanded = false;
+  bookName:any;
 
   toggleSearchInput() {
     this.showSearchInput = !this.showSearchInput;
@@ -20,6 +24,18 @@ export class NavbarComponent implements OnInit{
   constructor(private service:BookifyService){
 
     this.cartItems = this.service.cartItems;
+    this.wishList = this.service.wishList;
+    this.book = {bookId:'',bookName:'',
+    authors : '',
+    description : '', 
+    genre : '',
+    image_path : '',
+    price: '',
+    publications : '',
+    quantity:'',
+    type:''
+    }
+    
 
   }
 
@@ -34,11 +50,21 @@ this.service.getCartStatus().subscribe((data: any) => {
 
 });
 
+this.service.getWishListStatus().subscribe((data: any) => {
+  this.wishList.push(data);
+
+});
+
     
   }
   
   logout(){
     
+  }
+  searchBook(){
+
+    this.book = this.service.getBookByName(this.bookName);
+
   }
 
 }

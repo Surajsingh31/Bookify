@@ -34,6 +34,27 @@ public class EBookController {
         return eBookDAO.geteBookByName(eBookName);
     }
 
+    @GetMapping("getEBooksByGenre/{genre}")
+    public List<EBook> getEBooksBasedOnGenre(@PathVariable("genre") String genre){
+        return eBookDAO.getEBooksByGenre(genre);
+    }
+    @GetMapping("getEBooksByPrice/{genre}")
+    public List<EBook> getEBooksByPrice(@PathVariable("genre") String genre){
+        return eBookDAO.getEBooksByPrice(genre);
+    }
+    @GetMapping("getEBooksByPriceHigh/{genre}")
+    public List<EBook> getEBooksByPriceHigh(@PathVariable("genre") String genre){
+        return eBookDAO.getEBooksByPriceHigh(genre);
+    }
+    @GetMapping("getEBooksByAlphabet/{genre}")
+    public List<EBook> getEBooksByAlphabet(@PathVariable("genre") String genre){
+        return eBookDAO.getEBooksByAlphabet(genre);
+    }
+    @GetMapping("getEBooksByAlphabetDesc/{genre}")
+    public List<EBook> getEBooksByAlphabetDesc(@PathVariable("genre") String genre){
+        return eBookDAO.getEBooksByAlphabetDesc(genre);
+    }
+
     @PostMapping("/registereBook")
     public String registereBook(@RequestBody EBook eBook){
 

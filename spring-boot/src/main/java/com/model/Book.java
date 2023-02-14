@@ -1,8 +1,14 @@
 package com.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Book {
@@ -18,6 +24,10 @@ public class Book {
     private int quantity;
     private String authors;
     private String publications;
+
+    // @JsonIgnore
+    // @OneToMany
+    // List<Order> orderList = new ArrayList<>();
 
     public Book() {
         super();

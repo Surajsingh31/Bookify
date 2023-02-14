@@ -1,5 +1,91 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" style="height: 70px;">
+    <a class="navbar-brand logo" href="#">Bookify</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/book">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ebooks">E-books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/donate">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/charity">Request</a>
+        </li>
+      </ul>
+      
+      <form class="form-inline d-flex">
+        <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search Book Name" aria-label="Search" [ngClass]="{'expanded': isExpanded}"
+        [(ngModel)]="bookName" (keyup.enter)="searchBook()" [style.display]="showSearchInput ? 'block' : 'none'">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="searchBtn" (click)="toggleSearchInput()">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      
+      <script>
+        $("#searchBtn").click(function () {
+          $("#searchInput").toggle();
+        });
+      </script>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" routerLink="/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fas fa-shopping-cart" routerLink="/cart">
+            <span class="badge badge-primary">{{cartItems.length}}</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fas fa-heart" routerLink="/wishlist">
+          </a>
+        </li>
+        <ng-template #other_content>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Profile</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="dashboard">My Dashboard</a>
+            <a class="dropdown-item" routerLink="profile">My Profile</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="logout()">Logout</a>
+          </div>
+        </li>
+      </ng-template>
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+
+
+
+
+
+
+
+
+
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,4 +151,4 @@
     </div>
 
   </div>
-</nav>
+</nav> -->

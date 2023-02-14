@@ -10,15 +10,20 @@ export class BookifyService {
   isUserLogged:boolean;
   loginStatus:Subject<any>;
   productToBeAdded: Subject<any>
+  productToBeAddedInWishList: Subject<any>;
 
   cartItems:any;
+  wishList:any;
+  customer1:any;
 
   constructor(private httpClient:HttpClient) { 
 
     this.cartItems = [];
+    this.wishList = [];
     this.isUserLogged = false;
     this.loginStatus = new Subject();
     this.productToBeAdded = new Subject();
+    this.productToBeAddedInWishList = new Subject();
   }
 
   addToCart(book: any) {
@@ -26,6 +31,14 @@ export class BookifyService {
   }
   getCartStatus(): any {
     return this.productToBeAdded.asObservable();
+  }
+
+  addToWishList(book: any){
+      this.productToBeAddedInWishList.next(book);
+
+  }
+  getWishListStatus(){
+    return this.productToBeAddedInWishList.asObservable();
   }
 
   getLoginStatus(): any{
@@ -81,7 +94,49 @@ export class BookifyService {
   }
 
   getCustomer(customer: any) {
+
+    this.customer1 = customer;
     return this.httpClient.get("/getCustomer/" + customer.email + "/" + customer.password).toPromise();
+  }
+
+  getAlleBooks(){
+    return this.httpClient.get("/getAllEBooks");
+  }
+  deleteeBookById(bookId:any){
+
+    return this.httpClient.delete("/deleteeBookById/" + bookId);
+
+  }
+
+  sortEbook(genre:any){
+    return this.httpClient.get("/getEBooksByGenre/" + genre);
+  }
+
+  sort2Ebook(genre:any,type:any){
+    if(type == "Low"){
+      return this.httpClient.get("/getEBooksByPrice/" + genre);
+    }
+    else if(type == "High"){
+      return this.httpClient.get("/getEBooksByPriceHigh/" + genre);
+    }
+    else if(type == "A-Z"){
+      return this.httpClient.get("/getEBooksByAlphabet/" + genre);
+    }
+    return this.httpClient.get("/getEBooksByAlphabetDesc/" + genre);
+  }
+
+  getBookByName(bookName:any){
+    return this.httpClient.get("/getBookByName/" + bookName );
+  }
+
+  getCustomerProfile(){
+    return this.httpClient.get("/getCustomer/" + this.customer1.email + "/" + this.customer1.password);
+  }
+
+  deleteCustomer(custId:any){
+
+    return this.httpClient.delete("/deleteCustomerByCustId/",custId);
+
   }
 
 }

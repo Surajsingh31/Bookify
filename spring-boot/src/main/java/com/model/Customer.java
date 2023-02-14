@@ -1,8 +1,14 @@
 package com.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Customer {
@@ -22,6 +28,11 @@ public class Customer {
     private String state;
     private String country;
     private int coins;
+
+
+    // @JsonIgnore
+    // @OneToMany
+    // List<Order> orderList = new ArrayList<>();
 
 
     public Customer() {

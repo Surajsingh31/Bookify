@@ -1,4 +1,64 @@
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+</head>
+
+<h1 align="center"><div style="background-color: black;">{{genre}} Ebooks </div> </h1>
+<div id="select" align="right">
+<label for="Genre" style="margin: 5%;margin-right: 0px;" class="genre">Genre</label>&nbsp;
+<select name="genre" (click)="sort1(genre)" [(ngModel)]="genre"  class="genreOption">
+<option  value="All" >All</option>
+  <option  value="Romance" >Romance</option>
+  <option value="Fiction">Fiction</option>
+ 
+  <option value="Thriller">Thriller</option>
+  <option value="History">Historical</option>
+  <option value="Computer Science">Computer Science</option>
+ 
+  <option value="Medicine">Medicine</option>
+</select>
+</div>
+
+<div id="sort" align="left">
+    <label for="Sort" style="margin: 5%;margin-right: 0px;" class="sort">Sort</label>&nbsp;
+    <select name="type" (click)="sort2(genre,type)" [(ngModel)]="type" class="sortOption">
+    <option value="Low">Low</option>
+    <option value="High">High</option>
+    <option Value="A-Z">A-Z</option>
+    <option value="Z-A">Z-A</option>
+    </select>
+</div>
+<br><br><br><br>
+
+<div class="container">
+<div class="row" >
+  <div class="m-auto col-md-3" id="cards" *ngFor="let ebook of ebooks">
+    <div class="card " id="bookcard"  >
+      <img  style="height:120px" [src]="ebook.imagePath" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <br>
+        <h2 class="card-title" style="font-size: larger; text-align: center;">{{ebook.ebookName}}</h2>
+        <p class="card-text">{{ebook.description}}</p>
+        <a [href]="ebook.link" download target="_blank" class="btn btn-info" data-toggle="tooltip" data-bs-placement="right" title="Download Book">Read Ebook </a>
+       <button id="price" class="btn btn-info"> ₹{{ebook.price}}</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -264,4 +324,4 @@
         </div>
       </div>
   
-    </div>
+    </div> -->

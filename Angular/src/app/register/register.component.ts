@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { City, Country, State } from 'country-state-city';
 import { BookifyService } from '../bookify.service';
 
@@ -33,7 +34,8 @@ emailRegex ="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"
 constructor(
   private fb:FormBuilder,
 private httpClient: HttpClient,
-private service:BookifyService
+private service:BookifyService,
+private router:Router
 
 ){
   this.registrationForm = this.fb.group({
@@ -88,6 +90,8 @@ private service:BookifyService
     this.service.registerCustomer(this.customer).subscribe((result:any) =>{
           console.log(result);
     });
+    alert("You hava been Registered Successfully!!!");
+    this.router.navigate(['login']);
   
   
   }
