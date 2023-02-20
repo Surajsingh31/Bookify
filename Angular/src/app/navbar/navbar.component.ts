@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BookifyService } from '../bookify.service';
+declare var jQuery:any;
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +14,7 @@ export class NavbarComponent implements OnInit{
   showSearchInput = false;
   loginStatus:any;
   cartItems:any;
-  book:any;
+  modalBook:any;
   wishList:any;
   isExpanded = false;
   bookName:any;
@@ -21,11 +23,11 @@ export class NavbarComponent implements OnInit{
     this.showSearchInput = !this.showSearchInput;
   }
 
-  constructor(private service:BookifyService){
+  constructor(private service:BookifyService,private router:Router){
 
     this.cartItems = this.service.cartItems;
     this.wishList = this.service.wishList;
-    this.book = {bookId:'',bookName:'',
+    this.modalBook = {bookId:'',bookName:'',
     authors : '',
     description : '', 
     genre : '',
@@ -59,12 +61,20 @@ this.service.getWishListStatus().subscribe((data: any) => {
   }
   
   logout(){
+    this.service.setUserLoggedOut();
+    this.router.navigate(['login']);
     
   }
   searchBook(){
 
-    this.book = this.service.getBookByName(this.bookName);
+     this.service.getBookByName(this.bookName).subscribe((data:any) =>{
+          this.modalBook = data;
+     });
+     jQuery("#myModal").modal('show');
 
+  }
+  addToCart(book:any){
+    this.service.addToCart(book);
   }
 
 }

@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit {
   }
   else{
     this.Service.setUserLoggedIn();
-    this.router.navigate(['user']);
+    this.router.navigate(['home']);
   }
   } else {
     alert('Invalid Credentials!!!');

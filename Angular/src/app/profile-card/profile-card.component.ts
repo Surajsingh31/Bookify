@@ -11,6 +11,7 @@ export class ProfileCardComponent implements OnInit {
 
   customer:any
   constructor(private service:BookifyService){
+    this.customer = {custId:'',custName:'',email:'',gender:'',phoneNumber:'',password:'',type:'',address:'',city:'',pincode:'',country:'',state:'',coins:''}
 
   }
 
@@ -18,7 +19,9 @@ export class ProfileCardComponent implements OnInit {
 
     // this.service.getCustomer(this.customer).then((data: any) => {this.customer = data; console.log(data);});
 
-       this.customer = this.service.getCustomerProfile();
+       this.service.getCustomerProfile().subscribe((data:any) =>{
+            this.customer = data;
+       });
       console.log(this.customer);
     
       

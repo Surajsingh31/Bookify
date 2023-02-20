@@ -28,8 +28,6 @@
 <div id="sort" align="left">
     <label for="Sort" style="margin: 5%;margin-right: 0px;" class="sort">Sort</label>&nbsp;
     <select name="type" (click)="sort2(genre,type)" [(ngModel)]="type" class="sortOption">
-    <option value="Low">Low</option>
-    <option value="High">High</option>
     <option Value="A-Z">A-Z</option>
     <option value="Z-A">Z-A</option>
     </select>
@@ -42,11 +40,10 @@
     <div class="card " id="bookcard"  >
       <img  style="height:120px" [src]="ebook.imagePath" class="card-img-top" alt="..." />
       <div class="card-body">
-        <br>
-        <h2 class="card-title" style="font-size: larger; text-align: center;">{{ebook.ebookName}}</h2>
+        <br><br>
+        <h2 class="card-title" style="font-size: xx-large; text-align: center;">{{ebook.ebookName}}</h2>
         <p class="card-text">{{ebook.description}}</p>
         <a [href]="ebook.link" download target="_blank" class="btn btn-info" data-toggle="tooltip" data-bs-placement="right" title="Download Book">Read Ebook </a>
-       <button id="price" class="btn btn-info"> ₹{{ebook.price}}</button>
       </div>
     </div>
   </div>

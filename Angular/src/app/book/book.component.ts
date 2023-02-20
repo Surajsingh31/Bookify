@@ -13,6 +13,7 @@ export class BookComponent implements OnInit{
   genre:any;
   type:any;
   modalBook:any;
+
   constructor(private service:BookifyService){
     this.modalBook = {bookId:'',bookName:'',
     authors : '',
@@ -39,6 +40,7 @@ export class BookComponent implements OnInit{
   view(book:any){
       console.log(book);
       this.modalBook = book;
+      console.log(this.modalBook);
       jQuery('#myModal').modal('show');
   }
   sort1(genre:any){

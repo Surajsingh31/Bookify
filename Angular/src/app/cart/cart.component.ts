@@ -59,10 +59,13 @@ export class CartComponent implements OnInit {
           token: function (token: any) {
             console.log(token)
             alert('Payment via stripe successfull!');
-            // this.router.navigate(['user']);
+            
           }
+          
         });
+        
       }
+      // this.router.navigate(['user']);
         
       window.document.body.appendChild(scr);
 

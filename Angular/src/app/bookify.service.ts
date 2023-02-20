@@ -15,6 +15,7 @@ export class BookifyService {
   cartItems:any;
   wishList:any;
   customer1:any;
+  custId:any;
 
   constructor(private httpClient:HttpClient) { 
 
@@ -24,6 +25,7 @@ export class BookifyService {
     this.loginStatus = new Subject();
     this.productToBeAdded = new Subject();
     this.productToBeAddedInWishList = new Subject();
+    this.customer1 = {custId:'',custName:'',email:'',gender:'',phoneNumber:'',password:'',type:'',address:'',city:'',pincode:'',country:'',state:'',coins:''}
   }
 
   addToCart(book: any) {
@@ -94,7 +96,6 @@ export class BookifyService {
   }
 
   getCustomer(customer: any) {
-
     this.customer1 = customer;
     return this.httpClient.get("/getCustomer/" + customer.email + "/" + customer.password).toPromise();
   }
@@ -136,6 +137,25 @@ export class BookifyService {
   deleteCustomer(custId:any){
 
     return this.httpClient.delete("/deleteCustomerByCustId/",custId);
+
+  }
+
+  registerDonor(donation: any): any {
+    return this.httpClient.post('/registerDonor', donation);
+  }
+
+  getAllDonor(): any {
+    return this.httpClient.get('/getAllDonor');
+  }
+
+  getOrderByCustId(custId:any){
+
+    return this.httpClient.get('/getOrderByCustId/' + 3);
+  }
+
+  registerCharity(value:any){
+
+    this.httpClient.post("/registerCharity",value);
 
   }
 

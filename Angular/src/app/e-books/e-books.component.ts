@@ -22,7 +22,7 @@ export class EBooksComponent implements OnInit {
     this.Service.getAlleBooks().subscribe((data:any) =>{
       this.ebooks = data;
   });
-  this.type = "Low";
+  this.type = "A-Z";
   this.genre = "All";
 }
 

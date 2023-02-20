@@ -17,7 +17,7 @@ export class CharityComponent implements OnInit {
   }
   register(value:any){
 
-    console.log(value);
+    this.service.registerCharity(value);
 
   }
 

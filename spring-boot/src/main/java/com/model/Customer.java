@@ -34,6 +34,10 @@ public class Customer {
     // @OneToMany
     // List<Order> orderList = new ArrayList<>();
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "customer")
+    private List<Ordur> ordurs;
+
 
     public Customer() {
         super();

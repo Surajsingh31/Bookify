@@ -19,13 +19,13 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>#1</td>
-                            <td>Jan 1, 2023</td>
-                            <td>Name</td>
-                            <td>somewhere</td>
-                            <td>&#8377;50.00</td>
-                            <td>Shipped </td>
+                          <tr *ngFor="let order of orders">
+                            <td>{{order.ordId}}</td>
+                            <td>{{order.orderDate}}</td>
+                            <td>It starts with Us</td>
+                            <td>{{order.address}}</td>
+                            <td>&#8377;{{order.amount}}</td>
+                            <td>{{order.status}} </td>
                           </tr>
                       </tbody>
                     </table>
